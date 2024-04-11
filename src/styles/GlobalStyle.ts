@@ -24,3 +24,7 @@ export const InnerContainer = styled(Container)`
   display: flex;
   align-items: center;
 `
+export const InnerContainerFirst = styled(InnerContainer)`
+  margin-top: 0px;
+  padding-top: 110px;
+`
