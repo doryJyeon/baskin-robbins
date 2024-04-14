@@ -9,7 +9,7 @@ export const colors = {
 }
 
 export const Container = styled.div`
-  max-width: 1400px;
+  max-width: 1500px;
   height: fit-content;
   width: 90%;
   margin: 20px auto;
