@@ -1,5 +1,5 @@
 import MoveButton from "../components/common/MoveButton";
-import { InnerContainerFirst } from "../styles/GlobalStyle";
+import { InnerContainer } from "../styles/GlobalStyle";
 import { styled } from "styled-components";
 
 const NotFoundPage = () => {
@@ -15,7 +15,7 @@ const NotFoundPage = () => {
 
 export default NotFoundPage;
 
-const ErrorWrapper = styled(InnerContainerFirst)`
+const ErrorWrapper = styled(InnerContainer)`
   min-height: calc(100vh - 160px);
   flex-direction: column;
   justify-content: center;
