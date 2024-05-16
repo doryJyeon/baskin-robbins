@@ -1,19 +1,19 @@
 import HomeMain from "../components/Home/HomeMain"
-import OrderFlavor from "../components/Home/OrderFlavor"
-import Promotion from "../components/Home/Promotion"
+import NewItem from "../components/Home/NewItem"
+import HomePromotion from "../components/Home/HomePromotion"
 import BeBetter from "../components/Home/BeBetter"
 import Benefit from "../components/Home/Benefit"
-import Store from "../components/Home/Store"
+import BRPlay from "../components/Home/BRPlay"
 
 const HomePage = () => {
   return (
     <>
-      {/* <HomeMain /> */}
-      <Promotion />
-      <OrderFlavor/>
+      <HomeMain />
+      <HomePromotion />
+      <NewItem />
+      <BRPlay />
       <BeBetter />
       <Benefit />
-      <Store/>
     </>
   )
 }

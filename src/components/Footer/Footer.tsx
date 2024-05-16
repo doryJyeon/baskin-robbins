@@ -1,7 +1,7 @@
 import MoveImg from '../common/MoveImg';
 import MoveLink from '../common/MoveLink';
 import { CompanyLink, FooterWrapper, HappyLogos, LogoMenu, LogoWrapper, MenuWrapper, SnsLogos, SnsWrapper } from './style';
-import { footerMenus } from './dataFooterMenus';
+import { footerMenus } from '../../data/FooterMenus';
 
 const Footer = () => {
 

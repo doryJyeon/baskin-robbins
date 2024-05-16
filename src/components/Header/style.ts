@@ -12,6 +12,7 @@ export const HeaderWrapper = styled.header<Props>`
   height: ${headerHeight};
   background-color: ${props => props.scroll ? colors.primary : "transparent"};
   position: fixed;
+  z-index: 500;
 `;
 
 export const HeaderContainer = styled(Container)`

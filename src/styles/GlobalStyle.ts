@@ -5,9 +5,30 @@ export const colors = {
   light: "#ffe4ea",
   deep: "#ff5484",
   bg: "#f4e8df",
-  dark: "#1c1b18"
+  dark: "#1c1b18",
+  sand: "#d9bb97",
+  font: "#666"
 }
 
+// background 
+export const BgDot = styled.div`
+  background-image: url("/images/main/bg_hero.jpg");
+  background-size: auto;
+  background-repeat: repeat;
+`
+export const BgLightPink = styled.div`
+  background-color: ${colors.light};
+`
+export const BgBrown = styled.div`
+  background-image: url("/images/main/bg_play.jpg");
+  background-size: auto;
+  background-repeat: repeat;
+`
+export const BgBeige = styled.div`
+  background: ${colors.bg};
+`
+
+// container
 export const Container = styled.div`
   max-width: 1500px;
   height: fit-content;
@@ -21,12 +42,5 @@ export const Container = styled.div`
 `;
 
 export const InnerContainer = styled(Container)`
-  padding: 50px 0;
-  display: flex;
-  align-items: center;
-`
-
-export const InnerContainerGrid = styled(Container)`
-  padding: 50px 0;
-  display: grid;
+  padding: 80px 0;
 `

@@ -7,6 +7,7 @@ body {
   font-size: 16px;
   font-family: "Noto Sans KR", sans-serif;
   color: #222;
+  overflow-x: hidden;
 }
 
 li {
@@ -35,12 +36,29 @@ a:hover {
 #root {
   min-width: 100vw;
   min-height: 100vh;
-  background-image: url("/images/main/bg_hero.jpg");
-  background-size: auto;
-  background-repeat: repeat;
+  background-color: #fff;
 }
 
 footer {
   background-color: #1c1b18;
   margin: 0;
+}
+
+/* slide active */
+.slick-dots > li {
+  margin: 0 15px;
+}
+li.slick-active::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 32px;
+  position: absolute;
+  margin-top: -8px;
+  margin-left: -9px;
+  background-image: url("/images/icons/icon_bullet_active.png");
+}
+li.slick-active > div {
+  background-color: transparent !important;
 }

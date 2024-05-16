@@ -1,8 +1,9 @@
 import { styled } from "styled-components";
-import { InnerContainer } from "../../styles/GlobalStyle";
+import { Container } from "../../styles/GlobalStyle";
 import { Link } from "react-router-dom";
 
-export const HomeWrapper = styled(InnerContainer)`
+export const HomeWrapper = styled(Container)`
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   gap: 0;
