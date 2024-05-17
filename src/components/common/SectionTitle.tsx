@@ -26,11 +26,11 @@ const TitleWrapper = styled.div`
   > h2 {
     font-size: 3.125rem;
     font-weight: 700;
-    color: ${colors.deep};
+    color: ${props => props.color ? props.color : colors.deep};
   }
 
   > p {
-    font-size: .8rem;
-    color: #858585;
+    font-size: .9rem;
+    color: ${props => props.color ? props.color : "#858585"};
   }
 `

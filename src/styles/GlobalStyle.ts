@@ -19,11 +19,6 @@ export const BgDot = styled.div`
 export const BgLightPink = styled.div`
   background-color: ${colors.light};
 `
-export const BgBrown = styled.div`
-  background-image: url("/images/main/bg_play.jpg");
-  background-size: auto;
-  background-repeat: repeat;
-`
 export const BgBeige = styled.div`
   background: ${colors.bg};
 `
