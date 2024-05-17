@@ -1,5 +1,10 @@
 import { styled } from "styled-components"
 
+interface InnerContainerProps {
+  top?: string;
+  bottom?: string;
+}
+
 export const colors = {
   primary: "#f986bd",
   light: "#ffe4ea",
@@ -36,6 +41,7 @@ export const Container = styled.div`
   }
 `;
 
-export const InnerContainer = styled(Container)`
-  padding: 80px 0 100px;
+export const InnerContainer = styled(Container) <InnerContainerProps>`
+  padding-top: ${props => props.top ? props.top : "80px"};
+  padding-bottom: ${props => props.bottom ? props.bottom : "100px"};
 `
