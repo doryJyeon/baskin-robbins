@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { InnerContainer, colors } from "../../styles/GlobalStyle";
 import MoveImg from "../common/MoveImg";
 import SectionTitle from "../common/SectionTitle";
-import { PromotionsData } from "../../data/PromotionsData";
+import { PromotionData } from "../../data/PromotionData";
 import Slider from "react-slick";
 
 const HomePromotion = () => {
@@ -34,9 +34,9 @@ const HomePromotion = () => {
 
       <div className="slider-container">
         <Slider {...sliderSettings}>
-          {PromotionsData.map((item: string, index: number) => (
+          {PromotionData.map((item: string, index: number) => (
             <Promotion key={index}>
-              <MoveImg to={"promotion/a"} src={`promotion/${item[0]}`} />
+              <MoveImg to={`promotion/${item[0].substring(0, item[0].length - 4)}`} src={`promotion/${item[0]}`} />
               <PromoDay>{item[1]}</PromoDay>
               <PromoDescription>{item[2]}</PromoDescription>
             </Promotion>
@@ -50,10 +50,8 @@ const HomePromotion = () => {
 
 export default HomePromotion;
 
-// const PromotionWrapper = styled(InnerContainer)`
-// `
-
 const Promotion = styled.div`
+  margin-top: 50px;
   margin-bottom: 100px;
   box-sizing: border-box;
   padding-right: 8%;

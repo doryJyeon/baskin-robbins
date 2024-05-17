@@ -21,7 +21,7 @@ export default SectionTitle;
 const TitleWrapper = styled.div`
   width: 100%;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 
   > h2 {
     font-size: 3.125rem;

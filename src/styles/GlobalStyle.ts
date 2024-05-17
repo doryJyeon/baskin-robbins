@@ -42,5 +42,5 @@ export const Container = styled.div`
 `;
 
 export const InnerContainer = styled(Container)`
-  padding: 80px 0;
+  padding: 80px 0 100px;
 `
