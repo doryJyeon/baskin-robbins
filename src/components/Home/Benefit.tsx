@@ -4,6 +4,7 @@ import MoveImg from "../common/MoveImg";
 import SectionTitle from "../common/SectionTitle";
 import { BenefitData } from "../../data/BrBenefitData";
 import Slider from "react-slick";
+import { dateExpiredCheck } from "../../utils/dateUtils";
 
 const Benefit = () => {
   const sliderSettings = {
@@ -25,7 +26,7 @@ const Benefit = () => {
         <Benefits>
           <Slider {...sliderSettings}>
             {Object.entries(BenefitData).map(([keys, value]) => (
-              <MoveImg to={keys} src={`br_benefit/${value[1]}`} alt={keys} />
+              (dateExpiredCheck(value[0]) || <MoveImg to={keys} src={`br_benefit/${value[1]}`} alt={keys} key={keys} />)
             ))}
           </Slider>
         </Benefits>

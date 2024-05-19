@@ -39,8 +39,8 @@ const NewItem = () => {
 
         <div className="slider-container">
           <Slider {...sliderSettings}>
-            {NewItemData.map((items) => (
-              <NewItems>
+            {NewItemData.map((items, index) => (
+              <NewItems key={`NewI${index}`}>
                 <MainItem bgImg={`/images/new_item/${items[0][0]}`} />
 
                 <SubItems>
@@ -123,7 +123,6 @@ const SubItem = styled.div`
   }
 
   > img {
-    width: 50%;
     height: 100%;
     border-radius: 15px;
   }

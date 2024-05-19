@@ -36,7 +36,7 @@ const Footer = () => {
           <MenuWrapper>
             <ul>
               {Object.entries(footerMenus).map(([keys, values]) => (
-                <li>
+                <li key={keys}>
                   {keys}
 
                   <ol>

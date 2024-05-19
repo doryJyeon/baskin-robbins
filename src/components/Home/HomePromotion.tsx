@@ -4,6 +4,7 @@ import MoveImg from "../common/MoveImg";
 import SectionTitle from "../common/SectionTitle";
 import { PromotionData } from "../../data/PromotionData";
 import Slider from "react-slick";
+import { dateExpiredCheck } from "../../utils/dateUtils";
 
 const HomePromotion = () => {
   const sliderSettings = {
@@ -35,11 +36,13 @@ const HomePromotion = () => {
       <div className="slider-container">
         <Slider {...sliderSettings}>
           {PromotionData.map((item: string, index: number) => (
-            <Promotion key={index}>
-              <MoveImg to={`promotion/${item[0].substring(0, item[0].length - 4)}`} src={`promotion/${item[0]}`} />
-              <PromoDay>{item[1]}</PromoDay>
-              <PromoDescription>{item[2]}</PromoDescription>
-            </Promotion>
+            dateExpiredCheck(item[1].substring(13)) || (
+              <Promotion key={index}>
+                <MoveImg to={`promotion/${item[0].substring(0, item[0].length - 4)}`} src={`promotion/${item[0]}`} />
+                <PromoDay>{item[1]}</PromoDay>
+                <PromoDescription>{item[2]}</PromoDescription>
+              </Promotion>
+            )
           ))}
         </Slider>
       </div>
