@@ -1,0 +1,999 @@
+{
+  "ice cream" : {
+    "description" : "한 입에 물면 달콤하게 사르르 녹는 아이스크림.\n당신이 어떤 기분이든 그 아이스크림을 따라 당신의 기분은 아마 달콤해졌을 거예요.",
+    "img url": "flavor/",
+    "menus" : {
+      "이상한 나라의 슈팅스타": {
+        "img_url" : "shooting_star_in_wonderland",
+        "color" : "#ffe5ec",
+        "tags": "이달의 맛, 이상한 나라의 슈팅스타",
+        "tag_color": "#cdb4db"
+      },
+      "북극곰 폴라베어": {
+        "img_url" : "polar_bear",
+        "color" : "#5aa9e6",
+        "tags": "민트, 크런치, 폴라베어",
+        "tag_color": "#e0fbfc"
+      },
+      "디노 젤리": {
+        "img_url" : "dino_jelly",
+        "color" : "#a7c957",
+        "tags": "공룡젤리",
+        "tag_color": "#386641"
+      },
+      "소금 우유 아이스크림": {
+        "img_url" : "salt_milk",
+        "color" : "#004e98",
+        "tags": "소금우유, 단짠",
+        "tag_color": "#ffffff"
+      },
+      "봉쥬르, 마카롱": {
+        "img_url" : "bonjour_macaron",
+        "color" : "#ff006e",
+        "tags": "마카롱, 초콜릿",
+        "tag_color": "#ffe5ec"
+      },
+
+      
+      "망고 탱고": {
+        "img_url" : "mango_tango",
+        "color" : "#fca311",
+        "tags": "망고",
+        "tag_color": "#fff3b0"
+      },
+      "러브미": {
+        "img_url" : "love_me",
+        "color" : "#e5989b",
+        "tags": "딸기, 블루베리, 바닐라, 롤리팝캔디",
+        "tag_color": "#9d4edd"
+      },
+      "아빠는 딸바봉": {
+        "img_url" : "papa_and_daughter",
+        "color" : "#fb6f92",
+        "tags": "딸기, 바닐라",
+        "tag_color": "#ffe5ec"
+      },
+      "엄마는 외계인": {
+        "img_url" : "puss_in_boots",
+        "color" : "#f8cb5c",
+        "tags": "초콜릿, 초코볼",
+        "tag_color": "#87602c"
+      },
+      "민트 초콜릿 칩": {
+        "img_url" : "mint_chocolate_chip",
+        "color" : "#836468",
+        "tags": "민트, 초콜릿, 민초",
+        "tag_color": "#90b9b4"
+      },
+
+      
+      "뉴욕 치즈케이크": {
+        "img_url" : "new_york_cheesecake",
+        "color" : "#7f5a4d",
+        "tags": "치즈, 치즈케이크",
+        "tag_color": "#c17641"
+      },
+      "레인보우 샤베트": {
+        "img_url" : "rainbow_sherbet",
+        "color" : "#ffeb8e",
+        "tags": "파인애플, 오렌지, 라즈베리",
+        "tag_color": "#e54567"
+      },
+      "체리쥬빌레": {
+        "img_url" : "cherries_jubilee",
+        "color" : "#b45a93",
+        "tags": "체리",
+        "tag_color": "#ffd7de"
+      },
+      "슈팅스타": {
+        "img_url" : "shooting_star",
+        "color" : "#324b79",
+        "tags": "톡톡, 팝핑캔디, 체리",
+        "tag_color": "#9dbac6"
+      },
+      "오레오 쿠키 앤 크림": {
+        "img_url" : "cookies'n_cream",
+        "color" : "#35221f",
+        "tags": "바닐라, 오레오",
+        "tag_color": "#e6d7ba"
+      },
+
+      
+      "베리베리 스트로베리": {
+        "img_url" : "very_berry_strawberry",
+        "color" : "#126f4a",
+        "tags": "스트로베리, 새콤상큼",
+        "tag_color": "#ffc9c1"
+      },
+      "31요거트": {
+        "img_url" : "31_yogurt",
+        "color" : "#396b8e",
+        "tags": "요커트, 31요거트",
+        "tag_color": "#c8d870"
+      },
+      "바람과 함께 사라지다": {
+        "img_url" : "twinberry_cheesecake",
+        "color" : "#c32550",
+        "tags": "블루베리, 스트로베리, 치즈케이크",
+        "tag_color": "#ffcec7"
+      },
+      "바닐라": {
+        "img_url" : "vanilla",
+        "color" : "#67869b",
+        "tags": "바닐라",
+        "tag_color": "#f3efe5"
+      },
+      "초코나무 숲": {
+        "img_url" : "chocolate_tree",
+        "color" : "#3d5120",
+        "tags": "초콜릿, 녹차, 초코볼",
+        "tag_color": "#ffd988"
+      },
+
+      
+      "초콜릿 무스": {
+        "img_url" : "chocolate_mousse",
+        "color" : "#c4a788",
+        "tags": "초코속에, 초콜릿",
+        "tag_color": "#612f29"
+      },
+      "그린티": {
+        "img_url" : "green_tea",
+        "color" : "#fcef84",
+        "tags": "녹차, 그린티",
+        "tag_color": "#49511f"
+      },
+      "피스타치오 아몬드": {
+        "img_url" : "pistachio_almond",
+        "color" : "#836233",
+        "tags": "피스타치오, 아몬드",
+        "tag_color": "#c5e5dd"
+      },
+      "초콜릿": {
+        "img_url" : "chocolate",
+        "color" : "#fff99d",
+        "tags": "진정한, 초콜릿",
+        "tag_color": "#612f29"
+      },
+      "자모카 아몬드 훠지": {
+        "img_url" : "jamoka_almond_fudge",
+        "color" : "#6f6b69",
+        "tags": "모카, 초콜릿",
+        "tag_color": "#ddc295"
+      },
+
+      
+      "월넛": {
+        "img_url" : "walnut",
+        "color" : "#684410",
+        "tags": "호두",
+        "tag_color": "#f1f0c6"
+      },
+      "초콜릿 칩": {
+        "img_url" : "chocolate_chips",
+        "color" : "#f19bd4",
+        "tags": "초콜릿칩",
+        "tag_color": "#595959"
+      },
+      "블랙 소르베": {
+        "img_url" : "black_sorbet",
+        "color" : "#eed2ff",
+        "tags": "반전매력, 상큼, 레몬",
+        "tag_color": "#453d4d"
+      },
+      "아몬드 봉봉": {
+        "img_url" : "almond_bon_bon",
+        "color" : "#f8cb5c",
+        "tags": "아몬드, 초콜릿",
+        "tag_color": "#4c2113"
+      },
+      "애플 민트": {
+        "img_url" : "apple_mint",
+        "color" : "#9bb053",
+        "tags": "그린애플, 민트, 사과",
+        "tag_color": "#ffffff"
+      }
+    }
+  },
+  
+  "prepack" : {
+    "description" : "한 입에 물면 달콤하게 사르르 녹는 아이스크림.\n당신이 어떤 기분이든 그 아이스크림을 따라 당신의 기분은 아마 달콤해졌을 거예요.",
+    "img url": "prepack/",
+    "menus" : {
+      "애플망고 젤라또": {
+        "img_url" : "apple_mango_gelato",
+        "color" : "#ffe6a7",
+        "tags": "젤라또, 망고",
+        "tag_color": "#faa307"
+      },
+      "피스타치오 젤라또": {
+        "img_url" : "pistachio_gelato",
+        "color" : "#b5e48c",
+        "tags": "피스타치오, 젤라또",
+        "tag_color": "#606c38"
+      },
+      "블록팩 초콜릿": {
+        "img_url" : "chocolate",
+        "color" : "#582f0e",
+        "tags": "초콜릿",
+        "tag_color": "#ddb892"
+      },
+      "블록팩 바람과함께사라지다": {
+        "img_url" : "twinberry_cheesecake",
+        "color" : "#fae0e4",
+        "tags": "딸기, 블루베리, 치즈",
+        "tag_color": "#c9184a"
+      },
+      "블록팩 이상한나라의솜사탕": {
+        "img_url" : "cotton_candy_wonderland",
+        "color" : "#c9184a",
+        "tags": "솜사탕, 캔디",
+        "tag_color": "#fff0f3"
+      },
+      
+      "블록팩 민트초코봉봉": {
+        "img_url" : "mint_chocolate_bonbon",
+        "color" : "#81bcb0",
+        "tags": "민트, 초콜릿칩",
+        "tag_color": "#a35118"
+      },
+      "블록팩 뉴욕치즈케이크": {
+        "img_url" : "new_york_cheesecake",
+        "color" : "#eaac44",
+        "tags": "치즈, 크래커",
+        "tag_color": "#b6710a"
+      },
+      "블록팩 쿠키앤크림": {
+        "img_url" : "cookies'n_cream",
+        "color" : "#785859",
+        "tags": "바닐라, 쿠키",
+        "tag_color": "#e1dcda"
+      },
+      "블록팩 엄마는외계인": {
+        "img_url" : "puss_in_boots",
+        "color" : "#976b3c",
+        "tags": "초콜릿, 화이트무스",
+        "tag_color": "#fff3d4"
+      },
+      "블록팩 아몬드봉봉": {
+        "img_url" : "almond_bon_bon",
+        "color" : "#70593c",
+        "tags": "바닐라, 초콜릿, 초코아몬드",
+        "tag_color": "#e2d9be"
+      },
+      
+      "블록팩 초콜릿무스": {
+        "img_url" : "chocolate_mousse",
+        "color" : "#5b332a",
+        "tags": "초콜릿",
+        "tag_color": "#d7b6a7"
+      },
+      "블록팩 슈팅스타": {
+        "img_url" : "shooting_star",
+        "color" : "#92bdd0",
+        "tags": "바닐라, 블루베리, 체리",
+        "tag_color": "#f64d32"
+      },
+      "블록팩 체리쥬빌레": {
+        "img_url" : "cherries_jubilee",
+        "color" : "#c1628b",
+        "tags": "체리, 체리쥬빌레",
+        "tag_color": "#ffc8dd"
+      },
+      "비건 레디팩 미니\n(오틀리 코코넛 커리)": {
+        "img_url" : "oatly_coconut_coffee_mini_r",
+        "color" : "#bde0fe",
+        "tags": "비건오틀리, 코코넛커피, 레디팩미니",
+        "tag_color": "#9c6644"
+      },
+      "비건 레디팩 미니\n(오틀리 초콜릿)": {
+        "img_url" : "oatly_chocolate_mini_r",
+        "color" : "#6096ba",
+        "tags": "비건오틀리, 초콜릿, 레디팩미니",
+        "tag_color": "#7f5539"
+      },
+      
+      "레디팩 미니\n(아몬드 봉봉)": {
+        "img_url" : "almond_bon_bon_mini_r",
+        "color" : "#ad8562",
+        "tags": "초콜릿, 아몬드",
+        "tag_color": "#38150c"
+      },
+      "레디팩 미니(바닐라)": {
+        "img_url" : "vanilla_mini_r",
+        "color" : "#ac9272",
+        "tags": "바닐라",
+        "tag_color": "#fff3d4"
+      },
+      "레디팩 미니 (초콜릿)": {
+        "img_url" : "chocolate_mini_r",
+        "color" : "#a5796f",
+        "tags": "초콜릿",
+        "tag_color": "#edbb19"
+      },
+      "레디팩 (봉쥬르, 마카롱)": {
+        "img_url" : "bonjour_macaron_r",
+        "color" : "#ffb5a7",
+        "tags": "마카롱",
+        "tag_color": "#c9184a"
+      },
+      "레디팩 (초콜릿)": {
+        "img_url" : "chocolate_r",
+        "color" : "#540b0e",
+        "tags": "초콜릿",
+        "tag_color": "#a98467"
+      },
+      
+      "레디팩 (너는 참 달고나)": {
+        "img_url" : "dalgona_r",
+        "color" : "#bc6c25",
+        "tags": "달고나, 너는참달고",
+        "tag_color": "#faedcd"
+      },
+      "레디팩 (31 요거트)": {
+        "img_url" : "31_yogurt_r",
+        "color" : "#9c8877",
+        "tags": "요거트",
+        "tag_color": "#ffffff"
+      },
+      "레디팩 (뉴욕 치즈케이크)": {
+        "img_url" : "newyork_cheesecake_r",
+        "color" : "#ba9961",
+        "tags": "치즈케이크, 치즈",
+        "tag_color": "#9a5a19"
+      },
+      "레디팩 (레인보우 샤베트)": {
+        "img_url" : "rainbow_r",
+        "color" : "#f39aa9",
+        "tags": "라즈베리, 파인애플, 오렌지",
+        "tag_color": "#f8cb25"
+      },
+      "레디팩 (민트 초콜릿 칩)": {
+        "img_url" : "mint_chocolate_chip_r",
+        "color" : "#7e4228",
+        "tags": "초콜릿, 민트",
+        "tag_color": "#a4dfd9"
+      },
+      
+      "레디팩 (베리베리 스트로베리)": {
+        "img_url" : "very_berry_strawberry_r",
+        "color" : "#115109",
+        "tags": "딸기",
+        "tag_color": "#ff5f6f"
+      },
+      "레디팩 (소금 우유)": {
+        "img_url" : "salted_milk_r",
+        "color" : "#648bcc",
+        "tags": "소금우유",
+        "tag_color": "#ffffff"
+      },
+      "레디팩 (슈팅스타)": {
+        "img_url" : "shooting_star_r",
+        "color" : "#1a5693",
+        "tags": "블루베리, 바닐라, 팝핑캔디",
+        "tag_color": "#a4dbf8"
+      },
+      "레디팩 (아몬드 봉봉)": {
+        "img_url" : "almond_bon_bon_r",
+        "color" : "#361411",
+        "tags": "초콜릿, 아몬드",
+        "tag_color": "#e6b21d"
+      },
+      "레디팩 (엄마는 외계인)": {
+        "img_url" : "puss_in_boots_r",
+        "color" : "#cd9c6d",
+        "tags": "초콜릿, 초코볼",
+        "tag_color": "#421010"
+      },
+      
+      "레디팩 (오레오 쿠키 앤 크림)": {
+        "img_url" : "cookies_cream_r",
+        "color" : "#544746",
+        "tags": "바닐라, 오레오",
+        "tag_color": "#ffb7ce"
+      },
+      "레디팩 (이상한 나라의 솜사탕)": {
+        "img_url" : "cotton_candy_in_wonderland_r",
+        "color" : "#cce9ff",
+        "tags": "솜사탕",
+        "tag_color": "#ff8cc5"
+      },
+      "레디팩 (자모카 아몬드 훠지)": {
+        "img_url" : "jamoca_r",
+        "color" : "#3d1b0f",
+        "tags": "모카, 초콜릿",
+        "tag_color": "#c8940d"
+      },
+      "레디팩 (체리쥬빌레)": {
+        "img_url" : "cherries_jubilee_r",
+        "color" : "#599c30",
+        "tags": "체리",
+        "tag_color": "#ff6a93"
+      },
+      "레디팩 (초콜릿 무스)": {
+        "img_url" : "chocolate_mousse_r",
+        "color" : "#7b594d",
+        "tags": "초콜릿, 초콜릿칩",
+        "tag_color": "#c8930c"
+      },
+      
+      "레디팩 (피스타치오 아몬드)": {
+        "img_url" : "pistachio_almond_r",
+        "color" : "#07504c",
+        "tags": "피스타치오, 아몬드",
+        "tag_color": "#edbb19"
+      }
+    }
+  },
+  
+  "ice cream cake" : {
+    "description" : "축하하고 싶은 날에도, 위로가 필요한 날에도, 그 모든 순간 함께 할 아이스크림 케이크.\n달콤한 아이스크림 케이크로 당신의 특별한 날을 더욱더 특별하게 만들어드릴게요.",
+    "img url": "cake/",
+    "menus" : {
+      "달콤한 딸기 쏙~ 곰돌이": {
+        "img_url" : "pistachio_almond_r",
+        "color" : "#bc6c25",
+        "tags": "스트로베리, 바닐라",
+        "tag_color": "#f72585"
+      },
+      "다이노소어 스윗 월드": {
+        "img_url" : "dinosaur_sweet",
+        "color" : "#e9edc9",
+        "tags": "멜론화이트",
+        "tag_color": "#283618"
+      },
+      "핑크 플라워 포 유": {
+        "img_url" : "pink_flower",
+        "color" : "#ffdab9",
+        "tags": "가정의달, 어버이날, 스승의날",
+        "tag_color": "#f08080"
+      },
+      "블루밍 플라워 인 러브": {
+        "img_url" : "blooming_in_love",
+        "color" : "#ffcdb2",
+        "tags": "어버이날",
+        "tag_color": "#ff595e"
+      },
+      "도쿄바나나에 퐁당": {
+        "img_url" : "tokyo_banana",
+        "color" : "#fcf6bd",
+        "tags": "아이스도쿄바나나",
+        "tag_color": "#fb8500"
+      },
+      
+      "이 구역의 히어로, 파워퍼프걸!": {
+        "img_url" : "powerpuff_girls",
+        "color" : "#ffc8dd",
+        "tags": "파워퍼프걸, 팝핑스트로베리",
+        "tag_color": "#fb6f92"
+      },
+      "해피 조이 큐브": {
+        "img_url" : "happy_joy_cube",
+        "color" : "#f5cac3",
+        "tags": "바나나, 체리, 이상한나라의솜사탕, 스트로베리, 슈팅스타",
+        "tag_color": "#ef476f"
+      },
+      "달콤한 구름이 퐁당퐁당": {
+        "img_url" : "sweet_clouds",
+        "color" : "#a2d2ff",
+        "tags": "체리, 솜사탕, 바닐라",
+        "tag_color": "#0077b6"
+      },
+      "더 베스트 No.6": {
+        "img_url" : "",
+        "color" : "#c9184a",
+        "tags": "베리베리스트로베리, 레인보우샤베트, 슈팅스타, 엄마는외계인",
+        "tag_color": "#ffbd00"
+      },
+      "플라워 브리즈": {
+        "img_url" : "flower_breeze",
+        "color" : "#cb997e",
+        "tags": "플라워브리즈, 초콜릿무스, 초콜릿, 아몬드봉봉, 바닐라",
+        "tag_color": "#902923"
+      },
+      
+      "하트 쏙 ~ 샌드 케이크": {
+        "img_url" : "sand_cake_love",
+        "color" : "#fff0f3",
+        "tags": "초콜릿무스, 초콜릿칩, 밀크초콜릿, 초콜릿",
+        "tag_color": "#ff5d8f"
+      },
+      "해피 스마일 포 유": {
+        "img_url" : "happy_smile",
+        "color" : "#fdf8e1",
+        "tags": "레인보우샤베트, 체리, 트리플초콜릿, 베리베리스트로베리, 민트",
+        "tag_color": "#ff7b00"
+      },
+      "허그미 화이트 퍼피": {
+        "img_url" : "hug_me_puppy",
+        "color" : "#ffe5ec",
+        "tags": "바닐라, 베리베리스트로베리, 초콜릿, 31요거트",
+        "tag_color": "#ff006e"
+      },
+      "올 어바웃 초코": {
+        "img_url" : "all_about_chocolate",
+        "color" : "#f5d7bd",
+        "tags": "올어바웃초코, 초콜릿, 초콜릿무스",
+        "tag_color": "#5e3719"
+      },
+      "러블리 화이트 베어": {
+        "img_url" : "lovely_white_bear",
+        "color" : "#ffeedd",
+        "tags": "러블리화이트베어, 뉴욕치즈케이크, 바닐라, 아몬드봉봉",
+        "tag_color": "#7f5539"
+      },
+      
+      "나눠먹는 큐브 와츄원": {
+        "img_url" : "what_you_want_cube",
+        "color" : "#8b503d",
+        "tags": "나눠먹는와츄원, 레인보우샤베트, 민트초콜릿칩, 바닐라",
+        "tag_color": "#fccbd6"
+      },
+      "반짝이는 잔망루피": {
+        "img_url" : "shining_loopy",
+        "color" : "#fadf89",
+        "tags": "반짝이는잔망루피, 바나나, 초콜릿칩, 트리플초콜릿",
+        "tag_color": "#ff7e98"
+      },
+      "골라먹는 27 큐브": {
+        "img_url" : "27_cube",
+        "color" : "#ffd898",
+        "tags": "딸기, 치즈케이크, 민트",
+        "tag_color": "#fe5456"
+      },
+      "나눠먹는 와츄원": {
+        "img_url" : "what_you_want_share",
+        "color" : "#77afd7",
+        "tags": "나눠먹는와츄원, 초콜릿, 민트초콜릿칩, 뉴욕치즈케이크",
+        "tag_color": "#fff7e4"
+      },
+      "스페셜 데이": {
+        "img_url" : "special_day",
+        "color" : "#4ea2c9",
+        "tags": "스페셜데이",
+        "tag_color": "#f5b4d8"
+      },
+      
+      "리얼 초코 27 큐브": {
+        "img_url" : "27_chocolate",
+        "color" : "#ede5e0",
+        "tags": "리얼초코, 9가지맛",
+        "tag_color": "#6b4135"
+      },
+      "골라먹는 스노우 볼": {
+        "img_url" : "snowball_what_you_want",
+        "color" : "#77afd7",
+        "tags": "초콜릿, 딸기, 바나나, 민트",
+        "tag_color": "#fff7e4"
+      },
+      "골라먹는 와츄원": {
+        "img_url" : "what_you_want",
+        "color" : "#92d7d3",
+        "tags": "치즈, 민트, 딸기, 초콜릿",
+        "tag_color": "#f9f4d1"
+      },
+      "듀얼 와츄원 NO.9": {
+        "img_url" : "dual_what_you_want_9",
+        "color" : "#ffe9f6",
+        "tags": "초콜릿, 치즈, 딸기, 아몬드, 민트",
+        "tag_color": "#fe899d"
+      },
+      "미니 골라먹는 와츄원": {
+        "img_url" : "mini_waht_you_want",
+        "color" : "#cafffb",
+        "tags": "치즈, 솜사탕, 민트, 초콜릿",
+        "tag_color": "#ff637d"
+      },
+      
+      "미니 해피 버스데이 케이크": {
+        "img_url" : "mini_happy_birthday",
+        "color" : "#fcadc0",
+        "tags": "초콜릿, 딸기, 바나나, 민트",
+        "tag_color": "#a3dcf8"
+      },
+      "우주에서 온 엄마는 외계인": {
+        "img_url" : "puss_in_boots",
+        "color" : "#345fa3",
+        "tags": "우주에서온엄마는외계인, 민트초콜릿칩, 베리베리스트로베리, 아몬드봉봉",
+        "tag_color": "#fabec8"
+      },
+      "해피 버스데이": {
+        "img_url" : "happy_birtday",
+        "color" : "#ffec71",
+        "tags": "딸기, 아몬드, 초콜릿, 오레오",
+        "tag_color": "#ff637d"
+      }
+    }
+  },
+  
+  "dessert" : {
+    "description" : "아이스크림을 더욱 맛있고 특별하게 즐길 수 있는 베스킨라빈스의 아이스 디저트!\n쫀득한 모찌부터 달콤한 마카롱까지 다양한 디저트를 만나보세요.",
+    "img url": "dessert/",
+    "menus" : {
+      "바사삭 쌀튀밥 팥빙수": {
+        "img_url" : "rice_crunch_red_bean",
+        "color" : "#ede0d4",
+        "tags": "콩고물인절미, 빠삭한우리쌀튀밥",
+        "tag_color": "#590d22"
+      },
+      "솔티크림 망고빙수": {
+        "img_url" : "salty_cream_mango",
+        "color" : "#fcd581",
+        "tags": "솔티크림, 망고",
+        "tag_color": "#ff8600"
+      },
+      "맥심 스틱바 슈프림 골드": {
+        "img_url" : "maxim_supreme_mild",
+        "color" : "#dda15e",
+        "tags": "맥심, 슈프림골드",
+        "tag_color": "#bc6c25"
+      },
+      "미니 쿠키 샌드 바닐라": {
+        "img_url" : "mini_cookie_sand",
+        "color" : "#ffe69e",
+        "tags": "쿠키샌드, 바닐라",
+        "tag_color": "#e24e1b"
+      },
+      "다이제 초코 아이스 샌드": {
+        "img_url" : "diget_chocolate_sand",
+        "color" : "#faedcd",
+        "tags": "다이제 초코 샌드",
+        "tag_color": "#582f0e"
+      },
+      
+      "베리하츄핑 스틱바 딸기 요거트": {
+        "img_url" : "berryheartsping",
+        "color" : "#ebb0c2",
+        "tags": "베리하츄핑, 딸기요거트",
+        "tag_color": "#f199b6"
+      },
+      "아이스크림 롤 바닐라": {
+        "img_url" : "roll_vanilla",
+        "color" : "#f7c95e",
+        "tags": "바닐라",
+        "tag_color": "#b56501"
+      },
+      "아이스크림 롤 초콜릿": {
+        "img_url" : "roll_chocolate",
+        "color" : "#c88349",
+        "tags": "초콜릿",
+        "tag_color": "#f1c49a"
+      },
+      "더블 쿠키 샌드 바닐라&초콜릿": {
+        "img_url" : "double_sand",
+        "color" : "#bab3ff",
+        "tags": "바닐라, 초콜릿",
+        "tag_color": "#8f5e4c"
+      },
+      "아이스 쿠키 샌드 바닐라": {
+        "img_url" : "sand_vanilla",
+        "color" : "#b08968",
+        "tags": "바닐라, 초코쿠키",
+        "tag_color": "#ff8600"
+      },
+      
+      "랏소 베어 스틱바 파인애플": {
+        "img_url" : "lots-o_stick",
+        "color" : "#f5e859",
+        "tags": "랏소, 파인애플",
+        "tag_color": "#cc6699"
+      },
+      "닉 스틱바 망고": {
+        "img_url" : "nick_stick",
+        "color" : "#aa6dc3",
+        "tags": "닉, 망고",
+        "tag_color": "#ffe491"
+      },
+      "맥심 스틱바 모카골드 마일드": {
+        "img_url" : "maxim_mochagold_mild",
+        "color" : "#996633",
+        "tags": "맥심, 스틱바",
+        "tag_color": "#ffcc33"
+      },
+      "맥심 스틱바 화이트골드": {
+        "img_url" : "maxim_white_gold",
+        "color" : "#c9962e",
+        "tags": "커피, 모카",
+        "tag_color": "#fff2d8"
+      },
+      "미니 아이스 스틱바 바닐라": {
+        "img_url" : "mini_stick_bar_banilla",
+        "color" : "#5c4039",
+        "tags": "바닐라, 초콜릿, 아몬드",
+        "tag_color": "#b49191"
+      },
+      
+      "미키 마우스 스틱바 블랙 소르베": {
+        "img_url" : "mickey_mouse",
+        "color" : "#bee192",
+        "tags": "레몬",
+        "tag_color": "#ac9bcc"
+      },
+      "도날드 덕 스틱바 소다": {
+        "img_url" : "donald_duck",
+        "color" : "#f5e859",
+        "tags": "소다",
+        "tag_color": "#9ce1ff"
+      },
+      "알린 스틱바 그린애플": {
+        "img_url" : "alien",
+        "color" : "#318c75",
+        "tags": "사과",
+        "tag_color": "#d2e68c"
+      },
+      "주디 스틱바 스트로베리": {
+        "img_url" : "judy_stick",
+        "color" : "#f5e859",
+        "tags": "딸기",
+        "tag_color": "#e96273"
+      },
+      "아이스 마카롱 체리쥬빌레": {
+        "img_url" : "macaron_cherries_jubilee",
+        "color" : "#fadb83",
+        "tags": "아이스마카롱, 체리쥬빌레",
+        "tag_color": "#c04151"
+      },
+
+      "아이스 마카롱 초콜릿 무스": {
+        "img_url" : "macaron_chocolate_mousse",
+        "color" : "#4e3216",
+        "tags": "초콜릿무스, 아이스마카롱",
+        "tag_color": "#fce0be"
+      },
+      "아이스 마카롱 치즈": {
+        "img_url" : "macaron_cheese",
+        "color" : "#a0cfe7",
+        "tags": "치즈, 마카롱",
+        "tag_color": "#bd5d82"
+      },
+      "아이스 마카롱 쿠캐앤크림": {
+        "img_url" : "macaron_cookies_cream",
+        "color" : "#7d5d49",
+        "tags": "쿠키앤크림, 마카롱",
+        "tag_color": "#eee2c1"
+      },
+      "아이스 모나카 쫀떡 인절미": {
+        "img_url" : "monaka_injeolmi",
+        "color" : "#caf0f8",
+        "tags": "아이스모나카, 인절미",
+        "tag_color": "#03045e"
+      },
+      "아이스 모나카 우유": {
+        "img_url" : "monaka_milk",
+        "color" : "#86b3d6",
+        "tags": "아이스모나카, 우유",
+        "tag_color": "#f2dcaf"
+      },
+      
+      "돌하르방 모나카 우도 땅콩 & 바닐라": {
+        "img_url" : "udo_peanut_vanilla",
+        "color" : "#f5e859",
+        "tags": "돌하르방모나카, 바닐라",
+        "tag_color": "#f67b0c"
+      },
+      "돌하르방 모나카 제주 그린티 & 팥": {
+        "img_url" : "jeju_green_tea_red_bean",
+        "color" : "#ff9933",
+        "tags": "돌하르방모나카, 제주그린티",
+        "tag_color": "#ccff66"
+      },
+      "바나나킥 아이스 모찌": {
+        "img_url" : "mochi_banana_kink",
+        "color" : "#95c13e",
+        "tags": "바나나",
+        "tag_color": "#ffe188"
+      },
+      "아이스 모찌 복숭아 요거트": {
+        "img_url" : "mochi_peach_yogurt",
+        "color" : "#e59ba5",
+        "tags": "복숭아요거트, 아이스모찌",
+        "tag_color": "#f4f2bb"
+      },
+      "아이스 모찌 소금우유": {
+        "img_url" : "mochi_salted_milk",
+        "color" : "#d4bde1",
+        "tags": "소음우유, 아이스모찌",
+        "tag_color": "#3285bf"
+      },
+      
+      "아이스 호떡 모찌": {
+        "img_url" : "hotteok",
+        "color" : "#6a514b",
+        "tags": "아이스호떡",
+        "tag_color": "#f6baca"
+      },
+      "아이스 모찌 그린티": {
+        "img_url" : "mochi_green_tea",
+        "color" : "#cfe298",
+        "tags": "그린티, 아이스모찌",
+        "tag_color": "#734319"
+      },
+      "아이스 모찌 스트로베리": {
+        "img_url" : "mochi_strawberry",
+        "color" : "#fffeb0",
+        "tags": "스트로베리, 딸기, 아이스모찌",
+        "tag_color": "#f7adc1"
+      },
+      "아이스 모찌 초코바닐라": {
+        "img_url" : "mochi_chocolate_vanilla",
+        "color" : "#ba8968",
+        "tags": "초코바닐라, 아이스모찌",
+        "tag_color": "#ffe0e8"
+      },
+      "아이스 모찌 크림치즈": {
+        "img_url" : "mochi_cream_cheese",
+        "color" : "#bcebff",
+        "tags": "크림치즈, 치즈, 찹쌀떡",
+        "tag_color": "#f9c2d0"
+      }
+    }
+  },
+  
+  "beverage" : {
+    "description" : "짜릿하게 시원한 블라스트부터 아이스크림을 듬뿍넣고 갈아만든 쉐이크까지!\n배스킨라빈스의 특별함을 음료로 만나보세요.",
+    "img url": "baverage/",
+    "menus" : {
+      "빙수 블라스트": {
+        "img_url" : "shaved_ice_blast",
+        "color" : "#ede0d4",
+        "tags": "팥빙수, 망고빙수, 혼빙족",
+        "tag_color": "#ff8600"
+      },
+      "티 블라스트": {
+        "img_url" : "tea_blast",
+        "color" : "#f0f3bd",
+        "tags": "자몽블랙, 레몬라임, 얼그레이밀크",
+        "tag_color": "#f94144"
+      },
+      "요거트 블라스트": {
+        "img_url" : "yogurt_blast",
+        "color" : "#f8f7ff",
+        "tags": "플레인, 납작복숭아, 스트로베리",
+        "tag_color": "#f49cbb"
+      },
+      "카푸치노 블라스트": {
+        "img_url" : "cappuccino_blast",
+        "color" : "#f3e9dc",
+        "tags": "카푸치노, 블라스트",
+        "tag_color": "#6c584c"
+      },
+      "아이스크림 블라스트": {
+        "img_url" : "icecream_blast",
+        "color" : "#f9eae1",
+        "tags": "아몬드봉봉, 엄마는 외계인",
+        "tag_color": "#7d4f50"
+      },
+      
+      "과일 블라스트": {
+        "img_url" : "furits_blast",
+        "color" : "#fff0f3",
+        "tags": "설향딸기, 리치워터",
+        "tag_color": "#ff4d6d"
+      },
+      "에스프레소 블라스트": {
+        "img_url" : "espresso_blast",
+        "color" : "#f2cc8f",
+        "tags": "에스프레소, 콘파냐",
+        "tag_color": "#432818"
+      },
+      "와츄원 쉐이크": {
+        "img_url" : "what_you_want_shake",
+        "color" : "#fec89a",
+        "tags": "와츄원쉐이크",
+        "tag_color": "#bb9457"
+      },
+      "밀크 쉐이크": {
+        "img_url" : "milk_shake",
+        "color" : "#e0e1dd",
+        "tags": "밀크쉐이크",
+        "tag_color": "#99582a"
+      },
+      "오레오 쉐이크": {
+        "img_url" : "oreo_shake",
+        "color" : "#f08080",
+        "tags": "오레오, 초코, 딸기",
+        "tag_color": "#582f0e"
+      },
+      
+      "티류": {
+        "img_url" : "tea",
+        "color" : "#fff3b0",
+        "tags": "리치베리, 복숭아, 캐모마일",
+        "tag_color": "#ff9770"
+      },
+      "라떼류": {
+        "img_url" : "latte",
+        "color" : "#ffe5ec",
+        "tags": "딸기 연유 라떼, 엄마는 외계인 라떼",
+        "tag_color": "#bc6c25"
+      }
+    }
+  },
+  
+  "coffee" : {
+    "description" : "진한 카카오의 향과 풍부한 바디감의 배스킨라빈스 대표 커피 'Café Bris'\n일상에 모든 순간을 카페브리즈와 함께하세요.",
+    "img url": "coffee/",
+    "menus" : {
+      "아메리카노": {
+        "img_url" : "americano",
+        "color" : "#fec89a",
+        "tags": "아메리카노",
+        "tag_color": "#432818"
+      },
+      "카페라떼": {
+        "img_url" : "cafe_latte",
+        "color" : "#eec170",
+        "tags": "카페라떼",
+        "tag_color": "#772f1a"
+      },
+      "바닐라빈 라떼": {
+        "img_url" : "vanilla_bean_latte",
+        "color" : "#e6ccb2",
+        "tags": "바닐라빈라떼",
+        "tag_color": "#7f5539"
+      },
+      "카라멜 마끼아또": {
+        "img_url" : "caramel_macchiato",
+        "color" : "#815329",
+        "tags": "카라멜 마끼아또",
+        "tag_color": "#f1dac4"
+      },
+      "엄마는 외계인 카페모카": {
+        "img_url" : "cafe_mocha",
+        "color" : "#d7c9aa",
+        "tags": "엄마는외계인, 카페모카",
+        "tag_color": "#7b2d26"
+      },
+      
+      "연유라떼": {
+        "img_url" : "condensed_milk_latte",
+        "color" : "#f1e0c5",
+        "tags": "연유라떼",
+        "tag_color": "#7e4920"
+      },
+      "카페31": {
+        "img_url" : "cafe31_americano",
+        "color" : "#997b66",
+        "tags": "카페31",
+        "tag_color": "#45050c"
+      },
+      "아포가토 라떼": {
+        "img_url" : "affogato_latte",
+        "color" : "#f9c784",
+        "tags": "아포가토",
+        "tag_color": "#ff8c42"
+      },
+      "솔티크림 슈페너": {
+        "img_url" : "salty_cream_einspanner",
+        "color" : "#ffffff",
+        "tags": "솔티크림, 슈페너",
+        "tag_color": "#481d24"
+      },
+      "솔티크림 라떼": {
+        "img_url" : "salty_cream_latte",
+        "color" : "#8a5a44",
+        "tags": "솔티크림, 라떼",
+        "tag_color": "#f7dba7"
+      },
+      
+      "콜드브루 아메리카노": {
+        "img_url" : "cold_brew_americano",
+        "color" : "#d4a373",
+        "tags": "콜드브루",
+        "tag_color": "#ffe6a7"
+      },
+      "콜드브루 라떼": {
+        "img_url" : "cold_brew_latte",
+        "color" : "#fcbf49",
+        "tags": "콜드브루라떼",
+        "tag_color": "#bc6c25"
+      },
+      "콜드브루 오트": {
+        "img_url" : "cold_brew_oat",
+        "color" : "#ffc2d1",
+        "tags": "콜드브루, 오트라떼",
+        "tag_color": "#f77f00"
+      }
+    }
+  }
+}
