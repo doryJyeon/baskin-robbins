@@ -29,9 +29,9 @@ const Header = () => {
         </Link>
 
         <MenuWrapper scroll={scroll}>
-          <Link to={"/"}>Menu</Link>
-          <Link to={"/order"}>Order</Link>
-          <Link to={"/store"}>Store</Link>
+          <Link to={"/menu"}>Menu</Link>
+          <Link to={"/play"}>BR Play</Link>
+          <Link to={"/story"}>BR Story</Link>
         </MenuWrapper>
 
         <SearchWrapper
