@@ -7,16 +7,19 @@ const Header = () => {
   const login = false;  // global
   const [scroll, setScroll] = useState(false);
 
+  const isRoot = location.pathname === '/';
   const handleScroll = () => window.pageYOffset > 30 ? setScroll(true) : setScroll(false)
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    !isRoot
+      ? setScroll(true)
+      : window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [])
-  
+  }, [isRoot])
+
 
   return (
     <HeaderWrapper scroll={scroll}>
@@ -31,18 +34,18 @@ const Header = () => {
           <Link to={"/store"}>Store</Link>
         </MenuWrapper>
 
-        <SearchWrapper 
-          scroll={scroll} 
-          type="text" 
+        <SearchWrapper
+          scroll={scroll}
+          type="text"
           onFocus={() => setScroll(true)}
           onBlur={() => setScroll(false)}
-          placeholder="제품명 검색" 
+          placeholder="제품명 검색"
         />
 
         <SignWrapper scroll={scroll}>
-          { login
-          ? <Link to={"/signout"}><FaArrowRightFromBracket /></Link>
-          : <Link to={"/signin"}><FaUser /></Link>
+          {login
+            ? <Link to={"/signout"}><FaArrowRightFromBracket /></Link>
+            : <Link to={"/signin"}><FaUser /></Link>
           }
         </SignWrapper>
       </HeaderContainer>

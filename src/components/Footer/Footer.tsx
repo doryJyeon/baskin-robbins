@@ -67,7 +67,6 @@ const Footer = () => {
 
         <p>
           이 홈페이지는 개인 포트폴리오용으로 실제 운영 중인 배스킨라빈스 홈페이지가 아닙니다.
-          <br />icons &copy; Freepik
         </p>
 
       </FooterWrapper>
