@@ -75,7 +75,8 @@ export const MenusWrapper = styled.div`
 // flavor of month style -----
 export const FlavorMonth = styled.div`
   width: 100%;
-  margin-top: 80px;
+  max-width: 1032px;
+  margin: 80px auto 0;
   color: ${colors.dark};
 
   > article {
