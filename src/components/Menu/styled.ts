@@ -72,6 +72,102 @@ export const MenusWrapper = styled.div`
   }
 `
 
+// flavor of month style -----
+export const FlavorMonth = styled.div`
+  width: 100%;
+  margin-top: 80px;
+  color: ${colors.dark};
+
+  > article {
+    padding: 60px 0 50px;
+    border: 1px solid #d4d4d4;
+    text-align: center;
+
+    > h4 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    > h3 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin: 0 0 5px;
+    }
+    > p {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    > hr {
+      width: 60%;
+      margin: 35px auto 35px;
+      height: 2px;
+      border: none;
+      background-color: #d4d4d4;
+    }
+  }
+
+  > img {
+    width: 100%;
+    height: auto;
+  }
+
+  > h2 {
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 80px 0 40px;
+  }
+`
+
+export const FlavorWrapper = styled.ul`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  > li {
+    width: auto;
+    height: auto;
+    
+    > img {
+      width: 64px;
+      height: auto;
+    }
+    > P {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+`
+
+export const FlavorItemWrapper = styled.ul`
+  width: 100%;
+  display: flex;
+  gap: 10px;
+
+  > li {
+    width: 25%;
+    height: fit-content;
+    border: 1px solid #d4d4d4;
+    border-radius: 17px 17px 16px 16px;
+    
+    > img {
+      width: 100%;
+      border-radius: 16px;
+    }
+    > p {
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 20px 0 50px;
+    }
+  }
+`
+// flavor of month style ----- end
+
+
+// menus style ---------------
 export const MenusUl = styled.ul`
   display: grid;
   align-items: center;
@@ -154,3 +250,4 @@ export const MenuWrapper = styled.li<StyledProps>`
     }
   }
 `
+// menus style --------------- end

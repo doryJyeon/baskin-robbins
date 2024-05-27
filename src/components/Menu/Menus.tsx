@@ -1,4 +1,5 @@
 import { MenuInfo } from '../../interfaces/totalManus';
+import TitleDesc from './TitleDesc';
 import { MenusUl, MenuWrapper } from './styled';
 
 interface Props {
@@ -10,8 +11,7 @@ const Menus: React.FC<Props> = ({ data, menuType }) => {
 
   return (
     <>
-      <h2>{menuType}</h2>
-      <p dangerouslySetInnerHTML={{ __html: data.description.replace(/\n/g, "<br />") }} />
+      <TitleDesc title={menuType} desc={data.description.replace(/\n/g, "<br />")} />
 
       <MenusUl>
         {Object.entries(data.menus).map(([name, item]) => (
