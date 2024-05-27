@@ -8,3 +8,19 @@ export const dateExpiredCheck = (getString: string) => {
 
   return getDate < nowDate
 };
+
+/**
+ * date 가져오기
+ */
+export const getDate = (type: string) => {
+  const weekOfDay = ["일", "월", "화", "수", "목", "금", "토"];
+  const nowDate = new Date();
+  return (
+    type === "Year" ? nowDate.getFullYear() :
+      type === "nextMonth" ? Number(nowDate.getMonth()) + 2 :
+        type === "month" ? Number(nowDate.getMonth()) + 1 :
+          type === "date" ? nowDate.getDate() :
+            type === "day" ? weekOfDay[nowDate.getDay()] :
+              undefined
+  )
+}
