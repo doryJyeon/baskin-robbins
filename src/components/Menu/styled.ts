@@ -145,7 +145,7 @@ export const FlavorWrapper = styled.ul`
 export const FlavorItemWrapper = styled.ul`
   width: 100%;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 
   > li {
     width: 25%;
