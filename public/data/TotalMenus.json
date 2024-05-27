@@ -1,7 +1,7 @@
 {
   "ice cream" : {
     "description" : "한 입에 물면 달콤하게 사르르 녹는 아이스크림.\n당신이 어떤 기분이든 그 아이스크림을 따라 당신의 기분은 아마 달콤해졌을 거예요.",
-    "img url": "flavor/",
+    "img_url": "flavor",
     "menus" : {
       "이상한 나라의 슈팅스타": {
         "img_url" : "shooting_star_in_wonderland",
@@ -198,7 +198,7 @@
   
   "prepack" : {
     "description" : "한 입에 물면 달콤하게 사르르 녹는 아이스크림.\n당신이 어떤 기분이든 그 아이스크림을 따라 당신의 기분은 아마 달콤해졌을 거예요.",
-    "img url": "prepack/",
+    "img_url": "prepack",
     "menus" : {
       "애플망고 젤라또": {
         "img_url" : "apple_mango_gelato",
@@ -428,10 +428,10 @@
   
   "ice cream cake" : {
     "description" : "축하하고 싶은 날에도, 위로가 필요한 날에도, 그 모든 순간 함께 할 아이스크림 케이크.\n달콤한 아이스크림 케이크로 당신의 특별한 날을 더욱더 특별하게 만들어드릴게요.",
-    "img url": "cake/",
+    "img_url": "cake",
     "menus" : {
       "달콤한 딸기 쏙~ 곰돌이": {
-        "img_url" : "pistachio_almond_r",
+        "img_url" : "strawberry_bear",
         "color" : "#bc6c25",
         "tags": "스트로베리, 바닐라",
         "tag_color": "#f72585"
@@ -480,7 +480,7 @@
         "tag_color": "#0077b6"
       },
       "더 베스트 No.6": {
-        "img_url" : "",
+        "img_url" : "the_best_no6",
         "color" : "#c9184a",
         "tags": "베리베리스트로베리, 레인보우샤베트, 슈팅스타, 엄마는외계인",
         "tag_color": "#ffbd00"
@@ -608,7 +608,7 @@
   
   "dessert" : {
     "description" : "아이스크림을 더욱 맛있고 특별하게 즐길 수 있는 베스킨라빈스의 아이스 디저트!\n쫀득한 모찌부터 달콤한 마카롱까지 다양한 디저트를 만나보세요.",
-    "img url": "dessert/",
+    "img_url": "dessert",
     "menus" : {
       "바사삭 쌀튀밥 팥빙수": {
         "img_url" : "rice_crunch_red_bean",
@@ -831,7 +831,7 @@
   
   "beverage" : {
     "description" : "짜릿하게 시원한 블라스트부터 아이스크림을 듬뿍넣고 갈아만든 쉐이크까지!\n배스킨라빈스의 특별함을 음료로 만나보세요.",
-    "img url": "baverage/",
+    "img_url": "beverage",
     "menus" : {
       "빙수 블라스트": {
         "img_url" : "shaved_ice_blast",
@@ -912,7 +912,7 @@
   
   "coffee" : {
     "description" : "진한 카카오의 향과 풍부한 바디감의 배스킨라빈스 대표 커피 'Café Bris'\n일상에 모든 순간을 카페브리즈와 함께하세요.",
-    "img url": "coffee/",
+    "img_url": "coffee",
     "menus" : {
       "아메리카노": {
         "img_url" : "americano",
