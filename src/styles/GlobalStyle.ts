@@ -8,13 +8,15 @@ interface InnerContainerProps {
 export const colors = {
   primary: "#f986bd",
   light: "#ffe4ea",
+  hotpink: "#ff5b76",
   deep: "#ff5484",
   bg: "#f4e8df",
   dark: "#1c1b18",
   sand: "#d9bb97",
   font: "#666",
   disabled: "#b1b1b1",
-  border: "#d4d4d4"
+  border: "#d4d4d4",
+  redbtn: "#ff2a56"
 }
 
 // background 

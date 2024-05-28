@@ -1,8 +1,12 @@
 import { styled } from "styled-components";
 import { colors } from "../../styles/GlobalStyle";
 
-interface StyledProps {
+interface EventStyledProps {
   isBenefit: boolean;
+}
+
+interface PlazaStyledProps {
+  bgColor?: string;
 }
 
 export const MenuLinkWrapper = styled.ul`
@@ -91,7 +95,7 @@ export const EventWrapper = styled.ul`
   gap: 0 50px;
 `
 
-export const EventDiv = styled.li<StyledProps>`
+export const EventDiv = styled.li<EventStyledProps>`
   width: 100%;
   max-height: 295px;
   border: 1px solid ${colors.border};
@@ -165,3 +169,49 @@ export const EventDiv = styled.li<StyledProps>`
     }
   }
 `
+// event items -------------------------- end
+
+// plaza detail -----------------------------
+export const PlazaWrapper = styled.div`
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+`
+export const PlazaDetail = styled.div<PlazaStyledProps>`
+  width: 33%;
+  height: 275px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: ${props => props.bgColor || colors.light};
+  padding-top: 57.5px;
+  box-sizing: border-box;
+
+  > p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: ${colors.font};
+  }
+
+  > h2 {
+    color: ${colors.hotpink};
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+
+  > a {
+    color: #fff;
+    background-color: ${colors.redbtn};
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+  }
+  > a:nth-of-type(2) {
+    background-color: #fff;
+    color: ${colors.redbtn};
+    margin-left: 10px;
+  }
+`
+// plaza detail ------------------------- end

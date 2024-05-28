@@ -1,21 +1,28 @@
 import { Link } from "react-router-dom";
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 import { colors } from "../../styles/GlobalStyle";
 
 interface Props {
   text: string;
   to: string;
   className?: string;
+  blank?: boolean;
 }
 
-const MoveButton: React.FC<Props> = ({ text, to, className }) => {
-  return <ButtonLink to={to} className={className}>{text}</ButtonLink>;
+const MoveButton: React.FC<Props> = ({ text, to, className, blank }) => {
+  return (
+    blank ? (
+      <ALink href={to} target="_blank" rel="noopener noreferrer">{text}</ALink>
+    ) : (
+      <ButtonLink to={to} className={className}>{text}</ButtonLink>
+    )
+  )
 };
 
 export default MoveButton;
 
 // 기본 button colors.primary
-const ButtonLink = styled(Link)`
+const buttonStyle = css`
   min-width: 150px;
   margin: 50px auto 0;
   background-color: ${colors.primary};
@@ -51,4 +58,12 @@ const ButtonLink = styled(Link)`
     font-size: 1.5rem;
     padding: 15px 30px;
   }
+`
+
+const ALink = styled.a`
+  ${buttonStyle}
+`
+
+const ButtonLink = styled(Link)`
+  ${buttonStyle}
 `

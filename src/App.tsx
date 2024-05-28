@@ -9,6 +9,7 @@ import NotFoundPage from './pages/NotFoundPage'
 import Footer from './components/Footer/Footer';
 import MenuPage from './pages/MenuPage';
 import EventPage from './pages/EventPage';
+import PlazaPage from './pages/PlazaPage';
 
 const App: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const App: React.FC = () => {
         <Route path="/menu/:type" element={<MenuPage />} />
 
         <Route path="/play/event/:type" element={<EventPage />} />
-        <Route path="/play/plaza" element={<MenuPage />} />
+        <Route path="/play/plaza" element={<PlazaPage />} />
 
 
         <Route path="*" element={<NotFoundPage />} />
