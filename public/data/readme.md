@@ -25,3 +25,17 @@
 ```
 
 * 검색 시 제품명으로 검색해야함.
+
+### Events
+
+```
+{
+  "id": {
+    "title" : "string",
+    "img" : "(promotion|benefit)/url.(jpg|png)",
+    "type" : "(promotion|benefit)",
+    "start": "(start date|null)",
+    "end": "(end date|소진 시 까지|상시운영)"
+  },
+}
+```
