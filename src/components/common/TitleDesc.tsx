@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import { colors } from '../../styles/GlobalStyle';
+import { colors, pointFont } from '../../styles/GlobalStyle';
 
 interface Props {
   title: string;
@@ -24,8 +24,9 @@ const TitleDescWrapper = styled.div`
   color: ${colors.primary};
 
   > h2 {
-    font-size: 5rem;
-    font-weight: bold;
+    font-family: ${pointFont};
+    font-size: 5.6rem;
+    font-weight: 800;
     text-transform: capitalize;
     margin-bottom: 50px;
   }

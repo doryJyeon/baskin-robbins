@@ -33,7 +33,7 @@ export const MenuWrapper = styled.div<Props>`
   > a {
     color: ${props => props.scroll ? "#fff" : colors.dark};
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 500;
     margin-right: 20px;
   }
 `;
@@ -54,16 +54,14 @@ export const SearchWrapper = styled.input<Props>`
   border-bottom: 2px solid ${colors.primary};
   color: ${colors.dark};
   
-  ${props => props.scroll && 
+  ${props => props.scroll &&
     "border-bottom-color: #fff; background-image: url(/images/icons/btn_search_white.png);"
   }
 
   &::placeholder {
     font-size: 1rem;
     color: #33333350;
-    ${props => props.scroll && 
-      "color: #ffffff90;"
-    }
+    ${props => props.scroll && "color: #ffffff90;"}
   }
 `;
 

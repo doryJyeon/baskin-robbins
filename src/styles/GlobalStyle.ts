@@ -19,6 +19,8 @@ export const colors = {
   redbtn: "#ff2a56"
 }
 
+export const pointFont = '"Hahmlet", "Neuton"'
+
 // background 
 export const BgDot = styled.div`
   background-image: url("/images/main/bg_hero.jpg");
