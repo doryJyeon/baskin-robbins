@@ -7,7 +7,7 @@ import MenuLinks from "../components/Menu/MenuLinks";
 import Menus from "../components/Menu/Menus";
 import { MenusWrapper } from "../components/Menu/styled";
 import FlavorOfMonth from "../components/Menu/FlavorOfMonth";
-import TitleDesc from "../components/Menu/TitleDesc";
+import TitleDesc from "../components/common/TitleDesc";
 
 
 const MenuPage = () => {

@@ -55,21 +55,8 @@ export const MenuLinkWrapper = styled.ul`
 export const MenusWrapper = styled.div`
   width: 100%;
   height: fit-content;
-  margin: 50px 0;
+  margin-bottom: 50px;
   text-align: center;
-  color: ${colors.primary};
-
-  > h2 {
-    font-size: 5rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    margin-bottom: 50px;
-  }
-  > p {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 100px;
-  }
 `
 
 // flavor of month style -----
@@ -81,7 +68,7 @@ export const FlavorMonth = styled.div`
 
   > article {
     padding: 60px 0 50px;
-    border: 1px solid #d4d4d4;
+    border: 1px solid ${colors.border};
     text-align: center;
 
     > h4 {
@@ -102,7 +89,7 @@ export const FlavorMonth = styled.div`
       margin: 35px auto 35px;
       height: 2px;
       border: none;
-      background-color: #d4d4d4;
+      background-color: ${colors.border};
     }
   }
 
@@ -150,7 +137,7 @@ export const FlavorItemWrapper = styled.ul`
   > li {
     width: 25%;
     height: fit-content;
-    border: 1px solid #d4d4d4;
+    border: 1px solid ${colors.border};
     border-radius: 17px 17px 16px 16px;
     
     > img {

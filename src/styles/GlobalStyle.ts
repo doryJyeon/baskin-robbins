@@ -12,7 +12,9 @@ export const colors = {
   bg: "#f4e8df",
   dark: "#1c1b18",
   sand: "#d9bb97",
-  font: "#666"
+  font: "#666",
+  disabled: "#b1b1b1",
+  border: "#d4d4d4"
 }
 
 // background 

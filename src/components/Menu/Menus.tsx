@@ -1,5 +1,5 @@
 import { MenuInfo } from '../../interfaces/totalManus';
-import TitleDesc from './TitleDesc';
+import TitleDesc from '../common/TitleDesc';
 import { MenusUl, MenuWrapper } from './styled';
 
 interface Props {

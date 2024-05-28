@@ -1,4 +1,4 @@
-import TitleDesc from './TitleDesc';
+import TitleDesc from '../common/TitleDesc';
 import { getDate } from '../../utils/dateUtils';
 import { FlavorItemWrapper, FlavorMonth, FlavorWrapper } from './styled';
 
