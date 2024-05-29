@@ -1,19 +1,64 @@
+import { useEffect, useState } from "react"
 import HomeMain from "../components/Home/HomeMain"
 import NewItem from "../components/Home/NewItem"
 import HomePromotion from "../components/Home/HomePromotion"
 import BeBetter from "../components/Home/BeBetter"
 import Benefit from "../components/Home/Benefit"
 import BRPlay from "../components/Home/BRPlay"
+import { GetEvents } from "../components/GetData/GetEvents"
+import { Event } from "../interfaces/events";
+import { dateExpiredCheck } from "../utils/dateUtils"
 
 const HomePage = () => {
+  const [dataPromotion, setDataPromotion] = useState<Event | null>(null);
+  const [dataBenefit, setDataBenefit] = useState<Event | null>(null);
+  const [dataState, setDataState] = useState("Loading");
+
+  // get all events
+  const fetchData = async () => {
+    try {
+      setDataState("Loading");
+      setDataPromotion(null);
+      setDataBenefit(null);
+
+      const result = await GetEvents();
+      if (result) {
+        const validData = Object.entries(result)
+          .reduce((acc, [key, item]) => {
+            if (!dateExpiredCheck(item.end)) {
+              if (item.type === "promotion") {
+                acc.promotionData[key] = item;
+              } else if (item.type === "benefit") {
+                acc.benefitData[key] = item;
+              }
+            }
+            return acc;
+          }, { promotionData: {} as Event, benefitData: {} as Event });
+
+        setDataPromotion(validData.promotionData);
+        setDataBenefit(validData.benefitData);
+        setDataState("");
+      } else {
+        setDataState("No Data");
+      }
+    } catch (error) {
+      console.error('Error fetching TotalMenus data:', error);
+      setDataState("error");
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <>
       <HomeMain />
-      <HomePromotion />
+      {dataState === "" && dataPromotion && <HomePromotion eventData={dataPromotion} />}
       <NewItem />
       <BRPlay />
       <BeBetter />
-      <Benefit />
+      {dataState === "" && dataBenefit && <Benefit eventData={dataBenefit} />}
     </>
   )
 }

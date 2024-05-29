@@ -2,11 +2,14 @@ import { styled } from "styled-components";
 import { InnerContainer, colors } from "../../styles/GlobalStyle";
 import MoveImg from "../common/MoveImg";
 import SectionTitle from "../common/SectionTitle";
-import { BenefitData } from "../../data/BrBenefitData";
 import Slider from "react-slick";
-import { dateExpiredCheck } from "../../utils/dateUtils";
+import { Event } from "../../interfaces/events";
 
-const Benefit = () => {
+interface Props {
+  eventData: Event;
+}
+
+const Benefit: React.FC<Props> = ({ eventData }) => {
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -25,8 +28,8 @@ const Benefit = () => {
       <div className="slider-container">
         <Benefits>
           <Slider {...sliderSettings}>
-            {Object.entries(BenefitData).map(([keys, value]) => (
-              (dateExpiredCheck(value[0]) || <MoveImg to={keys} src={`br_benefit/${value[1]}`} alt={keys} key={keys} />)
+            {Object.entries(eventData).map(([key, item]) => (
+              <MoveImg key={key} to={key} src={`event/${item.img}`} alt={"benefit"} />
             ))}
           </Slider>
         </Benefits>

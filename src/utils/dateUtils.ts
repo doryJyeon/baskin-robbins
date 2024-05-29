@@ -2,9 +2,12 @@ const nowDate = new Date();
 
 /**
  * 유효기간 체크용 (년-월-일 비교, 시간 X)
+ * 2024-01-01 처럼 "-"가 있는 경우에만 일자 비교
  * f: 유효 / t: 종료
  */
 export const dateExpiredCheck = (getString: string) => {
+  if (getString.indexOf("-") === -1) return false
+
   const getDate = new Date(`${getString} 23:59:59`);
 
   return getDate < nowDate

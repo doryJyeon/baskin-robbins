@@ -2,11 +2,13 @@ import { styled } from "styled-components";
 import { InnerContainer, colors } from "../../styles/GlobalStyle";
 import MoveImg from "../common/MoveImg";
 import SectionTitle from "../common/SectionTitle";
-import { PromotionData } from "../../data/PromotionData";
 import Slider from "react-slick";
-import { dateExpiredCheck } from "../../utils/dateUtils";
+import { Event } from "../../interfaces/events";
+interface Props {
+  eventData: Event;
+}
 
-const HomePromotion = () => {
+const HomePromotion: React.FC<Props> = ({ eventData }) => {
   const sliderSettings = {
     dots: true,
     infinite: false,
@@ -35,18 +37,15 @@ const HomePromotion = () => {
 
       <div className="slider-container">
         <Slider {...sliderSettings}>
-          {PromotionData.map((item: string, index: number) => (
-            dateExpiredCheck(item[1].substring(13)) || (
-              <Promotion key={index}>
-                <MoveImg to={`promotion/${item[0].substring(0, item[0].length - 4)}`} src={`promotion/${item[0]}`} />
-                <PromoDay>{item[1]}</PromoDay>
-                <PromoDescription>{item[2]}</PromoDescription>
-              </Promotion>
-            )
+          {Object.entries(eventData).map(([key, item]) => (
+            <Promotion key={key}>
+              <MoveImg to={`event/promotion`} src={`event/${item.img}`} />
+              <PromoDay>{item.start && `${item.start} ~ `}{item.end}</PromoDay>
+              <PromoDescription>{item.title}</PromoDescription>
+            </Promotion>
           ))}
         </Slider>
       </div>
-
     </InnerContainer>
   );
 }

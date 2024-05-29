@@ -63,8 +63,8 @@ const EventPage = () => {
       {data && (
         <EventWrapper>
           {Object.entries(data).map(([key, item]) => (
-            // 상시, 소진 시가 아닌데 유효기간 지난경우는 제외
-            (item.end.indexOf("-") === -1 || !dateExpiredCheck(item.end)) && (
+            // 유효기간 체크
+            !dateExpiredCheck(item.end) && (
               type === "all" ? (
                 <EventDetail id={key} data={item} />
               ) : type === item.type && (
