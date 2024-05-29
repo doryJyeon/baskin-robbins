@@ -51,3 +51,50 @@ export const InnerContainer = styled(Container) <InnerContainerProps>`
   padding-top: ${props => props.top ? props.top : "80px"};
   padding-bottom: ${props => props.bottom ? props.bottom : "100px"};
 `
+
+// page menu style --------------------
+export const MenuLinkWrapper = styled.ul`
+  text-align: center;
+  width: 100%;
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${colors.primary};
+
+  li {
+    position: relative;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    
+    &::before {
+      content: "";
+      width: 1px;
+      height: 1rem;
+      margin-top: .3rem;
+      background-color: ${colors.primary};
+      position: absolute;
+      left: 0;
+    }
+    &:first-of-type::before {
+      content: "";
+      width: 0;
+    }
+
+    &.active {
+      background-color: ${colors.primary};
+      color: #fff;
+      border-radius: 3px;
+    }
+    &.active+::before {
+      content: "";
+      width: 0;
+    }
+
+    > a {
+      margin: 0 25px;
+    }
+  }
+`
+// page menu style --------------------

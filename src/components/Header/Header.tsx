@@ -31,7 +31,7 @@ const Header = () => {
         <MenuWrapper scroll={scroll}>
           <Link to={"/menu"}>Menu</Link>
           <Link to={"/play/event/all"}>BR Play</Link>
-          <Link to={"/story"}>BR Story</Link>
+          <Link to={"/story/history"}>BR Story</Link>
         </MenuWrapper>
 
         <SearchWrapper

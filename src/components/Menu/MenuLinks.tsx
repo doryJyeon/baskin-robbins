@@ -1,6 +1,6 @@
+import { MenuLinkWrapper } from '../../styles/GlobalStyle';
 import { checkActive } from '../../utils/utilityFunctions';
 import MoveLink from '../common/MoveLink';
-import { MenuLinkWrapper } from './styled';
 
 interface Props {
   menuType: string;
