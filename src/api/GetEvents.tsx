@@ -1,4 +1,4 @@
-import { Event } from "../../interfaces/events";
+import { Event } from "../interfaces/events";
 
 export const GetEvents = async (): Promise<Event | undefined> => {
   try {

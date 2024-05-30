@@ -4,12 +4,12 @@ import { InnerContainer } from "../styles/GlobalStyle";
 import TitleDesc from "../components/common/TitleDesc";
 import PlayLinks from "../components/Play/PlayLinks";
 import { EventTypeWrapper, EventWrapper } from "../components/Play/styled";
-import { GetEvents } from "../components/GetData/GetEvents";
 import { Event } from "../interfaces/events";
 import MoveLink from "../components/common/MoveLink";
 import { checkActive } from "../utils/utilityFunctions";
 import EventDetail from "../components/Play/EventDetail";
 import { dateExpiredCheck } from "../utils/dateUtils";
+import { GetEvents } from "../api/GetEvents";
 
 const EventPage = () => {
   const { type = "all" } = useParams<{ type: string }>();

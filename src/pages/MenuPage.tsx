@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { InnerContainer } from "../styles/GlobalStyle";
 import { MenuInfo } from "../interfaces/totalManus";
-import { GetTotalMenus } from "../components/GetData/GetTotalMenus";
 import MenuLinks from "../components/Menu/MenuLinks";
 import Menus from "../components/Menu/Menus";
 import { MenusWrapper } from "../components/Menu/styled";
 import FlavorOfMonth from "../components/Menu/FlavorOfMonth";
 import TitleDesc from "../components/common/TitleDesc";
+import { GetTotalMenus } from "../api/GetTotalMenus";
 
 
 const MenuPage = () => {

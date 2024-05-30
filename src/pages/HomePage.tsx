@@ -5,9 +5,9 @@ import HomePromotion from "../components/Home/HomePromotion"
 import BeBetter from "../components/Home/BeBetter"
 import Benefit from "../components/Home/Benefit"
 import BRPlay from "../components/Home/BRPlay"
-import { GetEvents } from "../components/GetData/GetEvents"
 import { Event } from "../interfaces/events";
 import { dateExpiredCheck } from "../utils/dateUtils"
+import { GetEvents } from "../api/GetEvents"
 
 const HomePage = () => {
   const [dataPromotion, setDataPromotion] = useState<Event | null>(null);

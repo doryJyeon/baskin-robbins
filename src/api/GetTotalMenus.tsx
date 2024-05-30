@@ -1,4 +1,4 @@
-import { TotalMenu } from "../../interfaces/totalManus";
+import { TotalMenu } from "../interfaces/totalManus";
 
 export const GetTotalMenus = async (): Promise<TotalMenu | undefined> => {
   try {
