@@ -4,8 +4,9 @@ import TitleDesc from '../common/TitleDesc';
 import { HistoryImgWrapper, HistoryMenuWrapper, MenuThema, TypeWrapper } from './styled';
 import { getDate } from '../../utils/dateUtils';
 import { checkActive } from '../../utils/utilityFunctions';
-
-type HistoryType = "year" | "thema";
+import { useEffect, useState } from 'react';
+import { FlavorHistoryArr, HistoryType } from '../../interfaces/flavorHistory';
+import { GetFlavorHistories } from '../../api/GetFlavorHistory';
 
 const History = () => {
   const location = useLocation();
@@ -14,8 +15,34 @@ const History = () => {
   const paramHistory = queryParams.get("type");
   const paramType: HistoryType = (paramHistory === "year" || paramHistory === "thema") ? paramHistory : "year";
   const paramDetail: string = queryParams.get("detail") || (paramType === "year" ? getDate("Year")!.toString() : "back");
-
   const thisURL = `story/history/?type=`;
+
+  const [data, setData] = useState<FlavorHistoryArr | null>(null);
+  const [dataState, setDataState] = useState("Loading");
+
+  // get all history
+  const fetchData = async () => {
+    try {
+      setDataState("Loading");
+      setData(null);
+
+      const result = await GetFlavorHistories();
+      if (result) {
+        // set type detail filtering
+        setData(result[paramType][paramDetail]);
+        setDataState("");
+      } else {
+        setDataState("No Data");
+      }
+    } catch (error) {
+      console.error('Error fetching TotalMenus data:', error);
+      setDataState("error");
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, [paramType, paramDetail]);
 
   return (
     <>
@@ -50,7 +77,12 @@ const History = () => {
       </HistoryMenuWrapper>
 
       <HistoryImgWrapper>
-        <img src="/images/flavor_history/2024/2024 (1).jpg" alt="" />
+        {dataState === "Loading" && <TitleDesc title={"Loding..."} desc={"잠시만 기다려주세요..."} />}
+        {dataState === "Error" && <TitleDesc title={"Error..."} desc={"에러가 발생했습니다.<br />다시 시도해주세요!"} />}
+        {dataState === "No Data" && <TitleDesc title={"No Data..."} desc={undefined} />}
+        {data && data[1].map((item) => (
+          <img src={`/images/flavor_history/${data[0]}/${item}`} alt="flavor history" />
+        ))}
       </HistoryImgWrapper>
     </>
   );

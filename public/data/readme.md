@@ -25,6 +25,7 @@
 ```
 
 * 검색 시 제품명으로 검색해야함.
+BR play/event
 
 ### Events
 
@@ -37,5 +38,38 @@
     "start": "(start date|null)",
     "end": "(end date|소진 시 까지|상시운영)"
   },
+}
+```
+
+### FlavorHistory
+/story/history
+
+```
+{
+  "year": {
+    "2024": [
+      "img dir/",
+      ["img url", "", ...]
+    ],
+    "2023": [
+      "img dir/",
+      ["img url", "", ...]
+    ],
+    ...
+  },
+  "thema": {
+    "back": [
+      "img dir/",
+      ["img url", "", ...]
+    ],
+    "legend": [
+      "img dir/",
+      ["img url", "", ...]
+    ],
+    "great": [
+      "img dir/",
+      ["img url", "", ...]
+    ]
+  }
 }
 ```
