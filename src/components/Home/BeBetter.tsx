@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-import { BgBeige, InnerContainer, colors } from '../../styles/GlobalStyle';
+import { BgBeige, InnerContainer, betterColor, colors } from '../../styles/GlobalStyle';
 import SectionTitle from '../common/SectionTitle';
 
 const BeBetter = () => {
@@ -72,13 +72,13 @@ const BetterWrapper = styled.div`
         font-weight: 600;
 
         &.brown {
-          color: #947244;
+          color: ${betterColor.brown};
         }
         &.pink {
-          color: #fd565a;
+          color: ${betterColor.pink};
         }
         &.green {
-          color: #00a000;
+          color: ${betterColor.green};
         }
       }
 

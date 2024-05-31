@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { colors } from "../../styles/GlobalStyle";
+import { betterColor, colors } from "../../styles/GlobalStyle";
 
 interface HistoryMenuWrapper {
   show: "year" | "thema";
@@ -9,6 +9,7 @@ interface MenuThema {
   active: boolean;
 }
 
+// flavor history -----------------------
 // type ---------------------------------
 export const TypeWrapper = styled.ul`
   width: 100%;
@@ -134,3 +135,78 @@ export const HistoryImgWrapper = styled.ol`
     height: auto;
   }
 `
+// flavor history ----------------------- end
+
+// be better ----------------------------
+export const BetterWrapper = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`
+
+export const Better = styled.article`
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 3.6%;
+  align-items: center;
+  border: 1px solid #e6ded1;
+  padding-right: 10px;
+  border-radius: 20px;
+  margin-top: 50px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  > img {
+    width: 45.53%;
+    max-width: 533px;
+    height: auto;
+    display: block;
+  }
+
+  > div {
+    margin: 15px 0 15px;
+
+    > h3 {
+      font-size: 3.125rem;
+      font-weight: 600;
+    }
+    > p {
+      font-size: 1.5rem;
+      color: ${colors.dark};
+      margin-top: 30px;
+      line-height: 1;
+      word-break: keep-all;
+    }
+    > p.small {
+      font-size: .95rem;
+      color: ${colors.font};
+      line-height: 1.6;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    > ul {
+      padding-left: 40px;
+      > li {
+        font-size: 1rem;
+        min-height: 33px;
+        list-style: url("/images/icons/icon_check.jpg");
+        font-weight: 600;
+      }
+    }
+    
+    .brown {
+      color: ${betterColor.brown};
+    }
+    .pink {
+      color: ${betterColor.pink};
+    }
+    .green {
+      color: ${betterColor.green};
+    }
+  }
+`
+
+// be better ---------------------------- end

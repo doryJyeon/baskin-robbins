@@ -18,6 +18,11 @@ export const colors = {
   border: "#d4d4d4",
   redbtn: "#ff2a56"
 }
+export const betterColor = {
+  pink: "#fd565a",
+  brown: "#947244",
+  green: "#00a000"
+}
 
 export const pointFont = '"Hahmlet", "Neuton"'
 
