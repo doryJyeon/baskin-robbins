@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { InnerContainer } from "../styles/GlobalStyle";
-import { MenuInfo } from "../interfaces/totalManus";
+import { MenuInfo, TotalMenu } from "../interfaces/totalManus";
 import MenuLinks from "../components/Menu/MenuLinks";
 import Menus from "../components/Menu/Menus";
 import { MenusWrapper } from "../components/Menu/styled";
 import FlavorOfMonth from "../components/Menu/FlavorOfMonth";
 import TitleDesc from "../components/common/TitleDesc";
-import { GetTotalMenus } from "../api/GetTotalMenus";
+import { fetchData } from "../api/fetchData";
 
 
 const MenuPage = () => {
@@ -18,12 +18,12 @@ const MenuPage = () => {
   const [dataState, setDataState] = useState("Loading");
 
   // get total menus
-  const fetchData = async () => {
+  const getData = async () => {
     try {
       setDataState("Loading");
       setData(null);
 
-      const result = await GetTotalMenus();
+      const result = await fetchData<TotalMenu>("/data/TotalMenus.json");
       if (result && result[menuType]) {
         setData(result[menuType]);
         setDataState("");
@@ -37,7 +37,7 @@ const MenuPage = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    getData();
   }, [menuType]);
 
   return (

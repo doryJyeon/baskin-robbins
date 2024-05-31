@@ -5,8 +5,8 @@ import { HistoryImgWrapper, HistoryMenuWrapper, MenuThema, TypeWrapper } from '.
 import { getDate } from '../../utils/dateUtils';
 import { checkActive } from '../../utils/utilityFunctions';
 import { useEffect, useState } from 'react';
-import { FlavorHistoryArr, HistoryType } from '../../interfaces/flavorHistory';
-import { GetFlavorHistories } from '../../api/GetFlavorHistory';
+import { FlavorHistories, FlavorHistoryArr, HistoryType } from '../../interfaces/flavorHistory';
+import { fetchData } from '../../api/fetchData';
 
 const History = () => {
   const location = useLocation();
@@ -21,12 +21,12 @@ const History = () => {
   const [dataState, setDataState] = useState("Loading");
 
   // get all history
-  const fetchData = async () => {
+  const getData = async () => {
     try {
       setDataState("Loading");
       setData(null);
 
-      const result = await GetFlavorHistories();
+      const result = await fetchData<FlavorHistories>("/data/FlavorHistory.json");
       if (result) {
         // set type detail filtering
         setData(result[paramType][paramDetail]);
@@ -41,7 +41,7 @@ const History = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    getData();
   }, [paramType, paramDetail]);
 
   return (

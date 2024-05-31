@@ -7,7 +7,7 @@ import Benefit from "../components/Home/Benefit"
 import BRPlay from "../components/Home/BRPlay"
 import { Event } from "../interfaces/events";
 import { dateExpiredCheck } from "../utils/dateUtils"
-import { GetEvents } from "../api/GetEvents"
+import { fetchData } from "../api/fetchData"
 
 const HomePage = () => {
   const [dataPromotion, setDataPromotion] = useState<Event | null>(null);
@@ -15,13 +15,14 @@ const HomePage = () => {
   const [dataState, setDataState] = useState("Loading");
 
   // get all events
-  const fetchData = async () => {
+  const getData = async () => {
     try {
       setDataState("Loading");
       setDataPromotion(null);
       setDataBenefit(null);
 
-      const result = await GetEvents();
+      const result = await fetchData<Event>("/data/Events.json");
+
       if (result) {
         const validData = Object.entries(result)
           .reduce((acc, [key, item]) => {
@@ -48,7 +49,7 @@ const HomePage = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    getData();
   }, []);
 
   return (

@@ -9,7 +9,7 @@ import MoveLink from "../components/common/MoveLink";
 import { checkActive } from "../utils/utilityFunctions";
 import EventDetail from "../components/Play/EventDetail";
 import { dateExpiredCheck } from "../utils/dateUtils";
-import { GetEvents } from "../api/GetEvents";
+import { fetchData } from "../api/fetchData";
 
 const EventPage = () => {
   const { type = "all" } = useParams<{ type: string }>();
@@ -19,12 +19,12 @@ const EventPage = () => {
   const [dataState, setDataState] = useState("Loading");
 
   // get all events
-  const fetchData = async () => {
+  const getData = async () => {
     try {
       setDataState("Loading");
       setData(null);
 
-      const result = await GetEvents();
+      const result = await fetchData<Event>("/data/Events.json");
       if (result) {
         setData(result);
         setDataState("");
@@ -32,7 +32,7 @@ const EventPage = () => {
         setDataState("No Data");
       }
     } catch (error) {
-      console.error('Error fetching TotalMenus data:', error);
+      console.error('Error fetching data:', error);
       setDataState("error");
     }
   };
@@ -42,7 +42,7 @@ const EventPage = () => {
     if (type !== "all" && type !== "promotion" && type !== "benefit") {
       navigate('/play/event/all');
     }
-    fetchData();
+    getData();
   }, [type, navigate]);
 
   return (
