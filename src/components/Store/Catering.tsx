@@ -1,4 +1,3 @@
-import { FaArrowRight } from 'react-icons/fa';
 import MoveButton from '../common/MoveButton';
 import TitleDesc from '../common/TitleDesc';
 import { CateringWrapper, Caterings, DeliveryTitle, HowToOrder } from './styled';
