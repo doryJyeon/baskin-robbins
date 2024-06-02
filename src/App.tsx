@@ -11,6 +11,7 @@ import MenuPage from './pages/MenuPage';
 import EventPage from './pages/EventPage';
 import PlazaPage from './pages/PlazaPage';
 import StoryPage from './pages/StoryPage';
+import StorePage from './pages/StorePage';
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,8 @@ const App: React.FC = () => {
         <Route path="/play/plaza" element={<PlazaPage />} />
 
         <Route path="/story/:type" element={<StoryPage />} />
+
+        <Route path="/store/:type" element={<StorePage />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

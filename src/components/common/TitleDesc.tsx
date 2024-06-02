@@ -4,13 +4,15 @@ import { colors, pointFont } from '../../styles/GlobalStyle';
 
 interface Props {
   title: string;
-  desc: string | undefined;
+  subTitle?: string;
+  desc?: string;
 }
 
-const TitleDesc: React.FC<Props> = ({ title, desc }) => {
+const TitleDesc: React.FC<Props> = ({ title, subTitle, desc }) => {
   return (
     <TitleDescWrapper>
       <h2>{title}</h2>
+      {subTitle && <h3>{subTitle}</h3>}
       {desc !== undefined && <p dangerouslySetInnerHTML={{ __html: desc }} />}
     </TitleDescWrapper>
   );
@@ -29,6 +31,11 @@ const TitleDescWrapper = styled.div`
     font-weight: 800;
     text-transform: capitalize;
     margin-bottom: 50px;
+  }
+  > h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
   }
   > p {
     font-size: 1.3rem;

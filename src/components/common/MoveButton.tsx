@@ -12,7 +12,7 @@ interface Props {
 const MoveButton: React.FC<Props> = ({ text, to, className, blank }) => {
   return (
     blank ? (
-      <ALink href={to} target="_blank" rel="noopener noreferrer">{text}</ALink>
+      <ALink href={to} className={className} target="_blank" rel="noopener noreferrer">{text}</ALink>
     ) : (
       <ButtonLink to={to} className={className}>{text}</ButtonLink>
     )
@@ -23,22 +23,34 @@ export default MoveButton;
 
 // 기본 button colors.primary
 const buttonStyle = css`
-  min-width: 150px;
-  margin: 50px auto 0;
+  min-width: 160px;
+  min-height: 45px;
+  margin: 40px auto 0;
   background-color: ${colors.primary};
   border-radius: 35px;
   border: none;
   color: #fff;
-  font-size: 1.2rem;
-  font-weight: 700;
   text-align: center;
   text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 45px;
+  display: inline-block;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 0 10px;
+
+  &.whiteRed {
+    background-color: #fff;
+    color: ${colors.redbtn};
+  }
+  &.red {
+    background-color: ${colors.redbtn};
+    color: #fff;
+  }
 
   &.dark {
-    background-color: ${colors.dark};
     color: #fff;
+    background-color: ${colors.dark};
   }
 
   &.bg-trans {
@@ -55,8 +67,9 @@ const buttonStyle = css`
 
   &.large {
     min-width: 200px;
-    font-size: 1.5rem;
-    padding: 15px 30px;
+    min-height: 60px;
+    font-size: 1.4rem;
+    line-height: 60px;
   }
 `
 

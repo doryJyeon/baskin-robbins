@@ -13,7 +13,9 @@ export const colors = {
   bg: "#f4e8df",
   dark: "#1c1b18",
   sand: "#d9bb97",
+  sandGray: "#c1bbaf",
   font: "#666",
+  fontDark: "#41332c",
   disabled: "#b1b1b1",
   border: "#d4d4d4",
   redbtn: "#ff2a56"

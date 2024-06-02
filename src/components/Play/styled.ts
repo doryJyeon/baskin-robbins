@@ -156,16 +156,10 @@ export const PlazaDetail = styled.div<PlazaStyledProps>`
   }
 
   > a {
-    color: #fff;
-    background-color: ${colors.redbtn};
     margin-top: 10px;
-    font-size: 1rem;
-    font-weight: 400;
     display: inline-block;
   }
   > a:nth-of-type(2) {
-    background-color: #fff;
-    color: ${colors.redbtn};
     margin-left: 10px;
   }
 `

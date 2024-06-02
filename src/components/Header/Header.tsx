@@ -69,7 +69,7 @@ const Header = () => {
           <Link to={"/menu"} onMouseOver={handleMouseOver}>Menu</Link>
           <Link to={"/play/event/all"} onMouseOver={handleMouseOver}>BR Play</Link>
           <Link to={"/story/history"} onMouseOver={handleMouseOver}>BR Story</Link>
-          <Link to={"/store/dellvery"} onMouseOver={handleMouseOver}>Dellvery</Link>
+          <Link to={"/store/delivery"} onMouseOver={handleMouseOver}>Delivery</Link>
         </MenuWrapper>
 
         <SearchWrapper
@@ -123,9 +123,9 @@ const Header = () => {
         <li className="menu__store">
           <ol>
             <li>
-              <Link to={"/store/dellvery"}>Dellvery</Link>
+              <Link to={"/store/delivery"}>Delivery</Link>
               <p>
-                <Link to={"/store/dellvery"}>배달주문</Link>
+                <Link to={"/store/delivery"}>배달주문</Link>
                 <Link to={"/store/catering"}>단체주문</Link>
               </p>
             </li>
