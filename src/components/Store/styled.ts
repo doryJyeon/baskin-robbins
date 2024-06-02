@@ -110,8 +110,10 @@ export const HowToOrder = styled.section`
 // delivery ---------------------------------
 export const HappyOrderWrapper = styled.section`
   width: 100%;
+  max-width: 1000px;
   display: flex;
   gap: 30px;
+  margin: 0 auto;
 
   > div {
     width: 33.3%;
@@ -150,6 +152,8 @@ export const HappyOrderWrapper = styled.section`
 `
 
 export const OtherAppWrapper = styled.article`
+  max-width: 1000px;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;

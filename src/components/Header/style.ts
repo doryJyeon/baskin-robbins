@@ -74,22 +74,24 @@ export const SignWrapper = styled.div<Props>`
 `;
 
 export const MenuDetailWrapper = styled.ul<DetailProps>`
-  width: calc(100% - 200px);
+  width: 100%;
   height: 172px;
-  padding: 0 100px;
   background-color: #fff;
-  display: block;
   box-shadow: 0px 4px 4px #00000020;
   display: ${props => props.show ? "block" : "none"};
 
   > li {
-    width: 100%;
+    width: 90%;
+    max-width: 1500px;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     cursor: pointer;
     transition: all 0.2s linear;
+    margin: 0 auto;
+    padding-left: 110px;
+    box-sizing: border-box;
+
 
     > ol {
       width: auto;
@@ -153,6 +155,7 @@ export const SearchDiv = styled.div<Props>`
   position: absolute;
   top: ${props => props.show ? "0" : "100px"};
   opacity: ${props => props.show ? "1" : "0"};
+  pointer-events: ${props => props.show ? "auto" : "none"};
   z-index: ${props => props.show ? "110" : "-1"};
   transition: all .3s linear;
 

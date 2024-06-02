@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import { Container } from "../../styles/GlobalStyle";
-import { Link } from "react-router-dom";
 
 export const HomeWrapper = styled(Container)`
   padding: 50px 0;

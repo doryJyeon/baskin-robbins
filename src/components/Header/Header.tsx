@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import { HeaderContainer, HeaderWrapper, LogoImage, MenuDetailWrapper, MenuWrapper, SearchDiv, SearchWrapper, SignWrapper } from "./style"
 import { FaArrowRightFromBracket, FaRegCircleXmark, FaUser } from "react-icons/fa6";
@@ -6,19 +6,24 @@ import { FaSearch } from "react-icons/fa";
 
 const Header = () => {
   const login = false;  // global
-  const [scroll, setScroll] = useState(false);
+  const isRoot = location.pathname === '/';
+  const [scroll, setScroll] = useState(!isRoot);
   const [search, setSearch] = useState(false);
   const [menu, setMenu] = useState<[boolean, string]>([false, ""]);
 
-  const isRoot = location.pathname === '/';
-  const handleScroll = () => window.pageYOffset > 30 ? setScroll(true) : setScroll(false)
+  const handleScroll = () => {
+    // 메인 제외 모든 페이지에서 bg-color: show, 메인에서 스크롤 상단만 투명유지
+    !isRoot
+      ? setScroll(true)
+      : window.pageYOffset > 30
+        ? setScroll(true)
+        : setScroll(false)
+  }
 
   const searchInput = document.querySelector<HTMLInputElement>('input[name="searchText"]');
 
   useEffect(() => {
-    !isRoot
-      ? setScroll(true)
-      : window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -33,7 +38,7 @@ const Header = () => {
   };
   const handleMouseLeave = () => {
     setMenu([false, ""]);
-    setScroll(false);
+    handleScroll();
   };
 
   // search show/hide
@@ -45,8 +50,8 @@ const Header = () => {
     searchInput!.focus();
   }
   const handleBlurSearch = () => {
-    isRoot && setScroll(false);
     setSearch(false);
+    handleScroll();
   }
 
   // search enter key
@@ -140,6 +145,7 @@ const Header = () => {
             name="searchText"
             placeholder="제품명을 입력하세요"
             onKeyDown={handleKeyDown}
+            onBlur={handleBlurSearch}
           />
           <button className="cancel" type="button" onClick={handleBlurSearch}><FaRegCircleXmark /></button>
           <button className="submit" type="submit"><FaSearch /></button>
