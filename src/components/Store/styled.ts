@@ -52,7 +52,8 @@ export const HowToOrder = styled.section`
     justify-content: center;
     gap: 35px;
 
-    > div {
+
+    > li {
       position: relative;
       width: 306px;
       height: 306px;
@@ -80,6 +81,19 @@ export const HowToOrder = styled.section`
         line-height: 1.4;
         margin-bottom: 50px;
       }
+    }
+    & > li:not(:last-of-type):after {
+      content: "";
+      width: 14px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin: -10px -26px 0 0;
+      background-image: url("/images/icons/icon_list_arrow.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
   > ul.howto__desc {

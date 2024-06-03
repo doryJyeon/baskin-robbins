@@ -35,21 +35,21 @@ const Delivery = () => {
         <h4>HOW TO ORDER</h4>
 
         <ol className="howto__img">
-          <div>
+          <li>
             <img src="/images/icons/delivery/icon_list_2_1.png" alt="order step 1" />
             <h4>STEP 1</h4>
             <p>해피앱에 접속 후, 해피마켓 해피오더에서<br />원하시는 제품을 선택!</p>
-          </div>
-          <div>
+          </li>
+          <li>
             <img src="/images/icons/delivery/icon_list_2_2.png" alt="order step 2" />
             <h4>STEP 2</h4>
             <p>원하시는 제품과 옵션을<br />선택 후 결제하면 주문 완료!</p>
-          </div>
-          <div>
+          </li>
+          <li>
             <img src="/images/icons/delivery/icon_list_2_3.png" alt="order step 3" />
             <h4>STEP 3</h4>
             <p>원하시는 제품과 옵션을<br />선택 후 결제하면 주문 완료!</p>
-          </div>
+          </li>
         </ol>
       </HowToOrder>
 
