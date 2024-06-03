@@ -19,8 +19,10 @@ const PlazaDetails = () => {
       <PlazaDetail bgColor="#c7eeff">
         <p>배라와의 시작<br />베라로의 시작</p>
         <h2>점포개설 문의</h2>
-        <MoveButton className='red' text={'동행을 희망해요'} to={"https://www.baskinrobbins.co.kr/play/plaza/consulting.php"} blank={true} />
-        <MoveButton className='whiteRed' text={'더 알아보기'} to={"https://www.baskinrobbins.co.kr/information-center/consulting/br.php"} blank={true} />
+        <div>
+          <MoveButton className='red' text={'동행을 희망해요'} to={"https://www.baskinrobbins.co.kr/play/plaza/consulting.php"} blank={true} />
+          <MoveButton className='whiteRed' text={'더 알아보기'} to={"https://www.baskinrobbins.co.kr/information-center/consulting/br.php"} blank={true} />
+        </div>
       </PlazaDetail>
     </PlazaWrapper>
   );

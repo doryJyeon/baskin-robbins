@@ -16,7 +16,7 @@ const Menus: React.FC<Props> = ({ data, menuType }) => {
       <MenusUl>
         {Object.entries(data.menus).map(([name, item]) => (
           <MenuWrapper key={name} bgColor={item.color} color={item.color} tagColor={item.tag_color}>
-            <div>
+            <div className={item.isNew && "new__icon"}>
               <p>#{item.tags.replace(/, /g, " #")}</p>
               <img src={`/images/ice_creams/${data.img_url}/${item.img_url}.png`} alt={name} />
             </div>

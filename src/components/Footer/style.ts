@@ -20,6 +20,14 @@ export const CompanyLink = styled.div`
   justify-content: space-between;
   padding: 15px 0;
   border-bottom: 1px solid #fff3;
+
+  @media (max-width: 1380px) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    > a {
+      line-height: 2;
+    }
+  }
 `
 
 // -- logo & footer menu
@@ -72,7 +80,14 @@ export const MenuWrapper = styled.div`
         }
       }
     }
+    
   }
+  
+@media (max-width: 1100px) {
+  > ul {
+    gap: 30px;
+  }
+}
 `
 
 // -- bottom logo & sns

@@ -59,6 +59,10 @@ export const FlavorMonth = styled.div`
     font-weight: 500;
     margin: 80px 0 40px;
   }
+
+@media (max-width: 1160px) {
+  max-width: 780px;
+}
 `
 
 export const FlavorWrapper = styled.ul`
@@ -153,12 +157,22 @@ export const MenuWrapper = styled.li<StyledProps>`
       top: 0;
       left: 0;
       right: 0;
-      margin: 5% auto 0;
+      margin: 0 auto 0;
       transition: all .23s linear;
+    }
 
-      &.new__icon {
-
-      }
+    &.new__icon:after {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 81px;
+      background-image: url('/images/icons/icon_new.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 8%;
+      left: 12%;
+      transition: all .23s linear;
     }
   }
 
@@ -190,11 +204,45 @@ export const MenuWrapper = styled.li<StyledProps>`
         width: 95%;
         top: 35%;
       }
+    
+      &.new__icon:after {
+        top: 43%;
+        left: 12%;
+      }
     }
 
     > p {
       color: ${props => props.color || "#999"};
     }
   }
+
+/* mobile */
+@media (max-width: 1270px) {
+  > div  {
+    > img {
+      width: 95%;
+      margin: 10% auto 0;
+    }
+    &.new__icon:after {
+      width: 50.25px;
+      height: 60.75px;
+    }
+  }
+}
+@media (max-width: 1160px) {
+  > div {
+    > p {
+      margin-top: 20px;
+      font-size: .9rem;
+    }
+    > img {
+      width: 100%;
+      margin: 15% auto 0;
+    }
+  }
+  > p {
+    font-size: 1rem;
+  }
+}  
 `
 // menus style --------------- end

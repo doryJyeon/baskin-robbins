@@ -178,6 +178,39 @@ export const Better = styled.article`
       color: ${betterColor.green};
     }
   }
+
+@media (max-width: 1160px) {
+  > div {
+    > h3 {
+      font-size: 2rem;
+    }
+    > p {
+      font-size: 1.3rem;
+      margin-top: 15px;
+    }
+    > p.small {
+      margin-top: 15px;
+    }
+    
+    > ul {
+      padding-left: 30px;
+      > li {
+        min-height: 26px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+@media (max-width: 1060px) {
+  > div {
+    > p {
+      margin-top: 10px;
+    }
+    > p.small {
+      margin-top: 5px;
+    }
+  }
+}
 `
 
 // be better ---------------------------- end

@@ -123,6 +123,12 @@ export const EventDiv = styled.li<EventStyledProps>`
       margin-bottom: 10px;
     }
   }
+
+@media (max-width: 1270px) {
+  > div:last-of-type > h3 {
+    font-size: 1.1rem;
+  }
+}
 `
 // event items -------------------------- end
 
@@ -139,8 +145,10 @@ export const PlazaDetail = styled.div<PlazaStyledProps>`
   border-radius: 10px;
   text-align: center;
   background-color: ${props => props.bgColor || colors.light};
-  padding-top: 57.5px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   > p {
     font-size: 1rem;
@@ -154,13 +162,25 @@ export const PlazaDetail = styled.div<PlazaStyledProps>`
     font-weight: 700;
     margin-top: 15px;
   }
-
   > a {
     margin-top: 10px;
     display: inline-block;
   }
-  > a:nth-of-type(2) {
-    margin-left: 10px;
+
+  > div {
+    > a {
+      margin-top: 10px;
+      display: inline-block;
+    }
+    > a:nth-of-type(2) {
+      margin-left: 10px;
+    }
   }
+
+@media (max-width: 1160px) {
+  > h2 {
+    font-size: 1.7rem;
+  }
+}
 `
 // plaza detail ------------------------- end

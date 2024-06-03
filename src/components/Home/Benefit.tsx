@@ -98,14 +98,22 @@ const LoadMapWrapper = styled.div`
 
   > div:last-child img {
     width: 100%;
-    top: -90px;
+    top: -6vw;
   }
+
+/* @media (max-width: 980px) {
+  max-width: 550px;
+  width: 90%;
+} */
+
 `
 const TitleDesc = styled.div`
   display: flex;
   align-items: end;
   gap: 20px;
   margin-bottom: 20px;
+  z-index: 3;
+  position: relative;
 
   > h3 {
     font-size: 2.8rem;

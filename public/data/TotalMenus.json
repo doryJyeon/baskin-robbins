@@ -7,7 +7,8 @@
         "img_url" : "shooting_star_in_wonderland",
         "color" : "#ffe5ec",
         "tags": "이달의 맛, 이상한 나라의 슈팅스타",
-        "tag_color": "#cdb4db"
+        "tag_color": "#cdb4db",
+        "isNew": "true"
       },
       "북극곰 폴라베어": {
         "img_url" : "polar_bear",

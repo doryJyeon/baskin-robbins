@@ -52,7 +52,6 @@ export const HowToOrder = styled.section`
     justify-content: center;
     gap: 35px;
 
-
     > li {
       position: relative;
       width: 306px;
@@ -119,6 +118,21 @@ export const HowToOrder = styled.section`
     background-repeat: no-repeat;
     background-position: right 30px center;
   }
+
+@media (max-width: 1100px) {
+  > ol.howto__img {
+    > li {
+      width: 290px;
+      height: 290px;
+    }
+  }
+  > a.large {
+    min-width: 160px;
+    padding: 0 40px 0 20px;
+    font-size: 1.2rem;
+    background-position: right 20px center;
+  }
+}
 `
 
 // delivery ---------------------------------

@@ -44,7 +44,7 @@ const BetterWrapper = styled.div`
   margin: 0 auto 50px;
   display: grid;
   grid: repeat(2, 1fr) / repeat(2, 1fr);
-  gap: 10px 0;
+  gap: 10px;
   justify-content: space-between;
 
   > a {
@@ -54,8 +54,7 @@ const BetterWrapper = styled.div`
     background-color: #fff;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 0;
+    grid-template-columns: 50% auto;
 
     > img {
       width: 100%;
