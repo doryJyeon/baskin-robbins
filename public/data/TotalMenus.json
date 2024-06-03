@@ -837,44 +837,51 @@
         "img_url" : "shaved_ice_blast",
         "color" : "#ede0d4",
         "tags": "팥빙수, 망고빙수, 혼빙족",
-        "tag_color": "#ff8600"
+        "tag_color": "#ff8600",
+        "menuDetail": "바사삭 쌀튀밥 팥빙, 솔티크림 망빙"
       },
       "티 블라스트": {
         "img_url" : "tea_blast",
         "color" : "#f0f3bd",
         "tags": "자몽블랙, 레몬라임, 얼그레이밀크",
-        "tag_color": "#f94144"
+        "tag_color": "#f94144",
+        "menuDetail": "얼그레이 밀크티, 자몽블랙티, 레몬라임민트티"
       },
       "요거트 블라스트": {
         "img_url" : "yogurt_blast",
         "color" : "#f8f7ff",
         "tags": "플레인, 납작복숭아, 스트로베리",
-        "tag_color": "#f49cbb"
+        "tag_color": "#f49cbb",
+        "menuDetail": "스트로베리, 플레인, 납작복숭아"
       },
       "카푸치노 블라스트": {
         "img_url" : "cappuccino_blast",
         "color" : "#f3e9dc",
         "tags": "카푸치노, 블라스트",
-        "tag_color": "#6c584c"
+        "tag_color": "#6c584c",
+        "menuDetail": "오리지널, 모카"
       },
       "아이스크림 블라스트": {
         "img_url" : "icecream_blast",
         "color" : "#f9eae1",
         "tags": "아몬드봉봉, 엄마는 외계인",
-        "tag_color": "#7d4f50"
+        "tag_color": "#7d4f50",
+        "menuDetail": "아몬드봉봉, 엄마는 외계인"
       },
       
       "과일 블라스트": {
         "img_url" : "furits_blast",
         "color" : "#fff0f3",
         "tags": "설향딸기, 리치워터",
-        "tag_color": "#ff4d6d"
+        "tag_color": "#ff4d6d",
+        "menuDetail": "설향딸기, 리치워터"
       },
       "에스프레소 블라스트": {
         "img_url" : "espresso_blast",
         "color" : "#f2cc8f",
         "tags": "에스프레소, 콘파냐",
-        "tag_color": "#432818"
+        "tag_color": "#432818",
+        "menuDetail": "에스프레소, 콘파냐"
       },
       "와츄원 쉐이크": {
         "img_url" : "what_you_want_shake",
@@ -886,26 +893,30 @@
         "img_url" : "milk_shake",
         "color" : "#e0e1dd",
         "tags": "밀크쉐이크",
-        "tag_color": "#99582a"
+        "tag_color": "#99582a",
+        "menuDetail": ""
       },
       "오레오 쉐이크": {
         "img_url" : "oreo_shake",
         "color" : "#f08080",
         "tags": "오레오, 초코, 딸기",
-        "tag_color": "#582f0e"
+        "tag_color": "#582f0e",
+        "menuDetail": "오리지널, 딸기, 초코"
       },
       
       "티류": {
         "img_url" : "tea",
         "color" : "#fff3b0",
         "tags": "리치베리, 복숭아, 캐모마일",
-        "tag_color": "#ff9770"
+        "tag_color": "#ff9770",
+        "menuDetail": "복숭아, 캐모마일, 리치베리"
       },
       "라떼류": {
         "img_url" : "latte",
         "color" : "#ffe5ec",
         "tags": "딸기 연유 라떼, 엄마는 외계인 라떼",
-        "tag_color": "#bc6c25"
+        "tag_color": "#bc6c25",
+        "menuDetail": "엄마는 외계인 라떼, 딸기 연유 라떼"
       }
     }
   },

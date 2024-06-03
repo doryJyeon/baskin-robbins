@@ -158,35 +158,35 @@ export const SearchDiv = styled.div<Props>`
   pointer-events: ${props => props.show ? "auto" : "none"};
   z-index: ${props => props.show ? "110" : "-1"};
   transition: all .3s linear;
+`
 
-  > form {
+export const Searchform = styled.form`
+  width: 100%;
+  max-width: 600px;
+  height: 2rem;
+  padding: 40px 0 8px;
+  margin: auto;
+  display: flex;
+  border-bottom: 2px solid ${colors.dark};
+
+  > input, > button {
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  > input {
     width: 100%;
-    max-width: 500px;
+    height: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color: ${colors.dark};
+  }
+  > button {
+    width: 2rem;
     height: 2rem;
-    padding: 40px 0 8px;
-    margin: auto;
-    display: flex;
-    border-bottom: 2px solid ${colors.dark};
-
-    > input, > button {
-      outline: none;
-      border: none;
-      background: transparent;
-    }
-    > input {
-      width: 100%;
-      height: 100%;
-      font-size: 2rem;
-      text-align: center;
-      color: ${colors.dark};
-    }
-    > button {
-      width: 2rem;
-      height: 2rem;
-      font-size: 2rem;
-      margin-left: 1rem;
-      color: ${colors.dark};
-      cursor: pointer;
-    }
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: ${colors.dark};
+    cursor: pointer;
   }
 `

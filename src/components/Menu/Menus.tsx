@@ -20,7 +20,10 @@ const Menus: React.FC<Props> = ({ data, menuType }) => {
               <p>#{item.tags.replace(/, /g, " #")}</p>
               <img src={`/images/ice_creams/${data.img_url}/${item.img_url}.png`} alt={name} />
             </div>
-            <p color={item.color}>{name}</p>
+            <p color={item.color}>
+              {name}
+              {item.menuDetail && <p className='menu__detail'>({item.menuDetail})</p>}
+            </p>
           </MenuWrapper>
         ))}
       </MenusUl>

@@ -169,6 +169,10 @@ export const MenuWrapper = styled.li<StyledProps>`
     font-weight: 600;
     font-size: 1.1rem;
     color: #999;
+
+    > p.menu__detail {
+      font-size: .9rem;
+    }
   }
   
   /* hover */

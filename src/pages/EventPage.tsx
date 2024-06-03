@@ -10,6 +10,7 @@ import { checkActive } from "../utils/utilityFunctions";
 import EventDetail from "../components/Play/EventDetail";
 import { dateExpiredCheck } from "../utils/dateUtils";
 import { fetchData } from "../api/fetchData";
+import DataStateComponent from "../components/common/DataStateComponent";
 
 const EventPage = () => {
   const { type = "all" } = useParams<{ type: string }>();
@@ -33,7 +34,7 @@ const EventPage = () => {
       }
     } catch (error) {
       console.error('Error fetching data:', error);
-      setDataState("error");
+      setDataState("Error");
     }
   };
 
@@ -57,9 +58,7 @@ const EventPage = () => {
         <MoveLink text={"제휴혜택"} to={"play/event/benefit"} isLi={true} isActive={checkActive(type, "benefit")} />
       </EventTypeWrapper>
 
-      {dataState === "Loading" && <TitleDesc title={"Loding..."} desc={"잠시만 기다려주세요..."} />}
-      {dataState === "Error" && <TitleDesc title={"Error..."} desc={"에러가 발생했습니다.<br />다시 시도해주세요!"} />}
-      {dataState === "No Data" && <TitleDesc title={"No Data..."} desc={undefined} />}
+      {dataState !== "" && <DataStateComponent getState={dataState} />}
       {data && (
         <EventWrapper>
           {Object.entries(data).map(([key, item]) => (

@@ -44,7 +44,7 @@ const HomePage = () => {
       }
     } catch (error) {
       console.error('Error fetching TotalMenus data:', error);
-      setDataState("error");
+      setDataState("Error");
     }
   };
 

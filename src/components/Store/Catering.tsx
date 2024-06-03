@@ -19,12 +19,12 @@ const Catering = () => {
           <div>
             <p className="small">아이스크림 제품</p>
             <h4>회사, 관공서, 은행, 학교 등</h4>
-            <h4 className="deep">한 장소로 일괄배송</h4>
+            <h4 className="font__deep">한 장소로 일괄배송</h4>
             <div>
               <div>
                 <p className="round_title">할인 및 혜택</p>
-                <p>할인혜택 <span className="deep">별도협의 필요</span></p>
-                <p>50만원 이상 <span className="deep">배송/배달 서비스</span></p>
+                <p>할인혜택 <span className="font__deep">별도협의 필요</span></p>
+                <p>50만원 이상 <span className="font__deep">배송/배달 서비스</span></p>
               </div>
               <div>
                 <p className="round_title">결제방식</p>
@@ -38,13 +38,13 @@ const Catering = () => {
           <div>
             <p className="small">아이스크림 제품</p>
             <h4>전국 VIP 고객에게 원하는 시간 / 장소로 배달</h4>
-            <h4 className="deep">여러곳 배달</h4>
+            <h4 className="font__deep">여러곳 배달</h4>
             <div>
               <div>
                 <p className="round_title">할인 및 혜택</p>
-                <p>50만원 이상 <span className="deep">5%</span></p>
-                <p>100만원 이상 <span className="deep">별도 협의 필요</span></p>
-                <p>50만원 이상 <span className="deep">주문 가능</span></p>
+                <p>50만원 이상 <span className="font__deep">5%</span></p>
+                <p>100만원 이상 <span className="font__deep">별도 협의 필요</span></p>
+                <p>50만원 이상 <span className="font__deep">주문 가능</span></p>
               </div>
               <div>
                 <p className="round_title">결제방식</p>
@@ -58,12 +58,12 @@ const Catering = () => {
           <div>
             <p className="small">온/오프라인 상품권</p>
             <h4>매장, 해피오더, 배달앱 다양한 채널 결제 가능</h4>
-            <h4 className="deep">모바일교환권</h4>
+            <h4 className="font__deep">모바일교환권</h4>
             <div>
               <div>
                 <p className="round_title">할인 및 혜택</p>
-                <p>500만원 이상 <span className="deep">1%</span></p>
-                <p><span className="deep">발송료 무료 </span>(건당 50원)</p>
+                <p>500만원 이상 <span className="font__deep">1%</span></p>
+                <p><span className="font__deep">발송료 무료 </span>(건당 50원)</p>
               </div>
               <div>
                 <p className="round_title">결제방식</p>
@@ -78,12 +78,12 @@ const Catering = () => {
           <div>
             <p className="small">온/오프라인 상품권</p>
             <h4>모바일사용이 익숙지 않은 분께 감사의 마음을 전하고 싶다면?</h4>
-            <h4 className="deep">지류상품권</h4>
+            <h4 className="font__deep">지류상품권</h4>
             <div>
               <div>
                 <p className="round_title">할인 및 혜택</p>
-                <p>300만원 이상 <span className="deep">2%</span></p>
-                <p>500만원 이상 <span className="deep">3%</span></p>
+                <p>300만원 이상 <span className="font__deep">2%</span></p>
+                <p>500만원 이상 <span className="font__deep">3%</span></p>
                 <p>포장봉투 제공 / 등기발송 (1곳)</p>
               </div>
               <div>
@@ -99,7 +99,7 @@ const Catering = () => {
           <div>
             <p className="small">아이스크림, 음료 제품</p>
             <h4>실내외 공연, 연예인, 축제 등 이벤트 장소 케이터링</h4>
-            <h4 className="deep">아이스크림 트레일러</h4>
+            <h4 className="font__deep">아이스크림 트레일러</h4>
             <div>
               <div>
                 <p className="round_title">할인 및 혜택</p>

@@ -44,6 +44,10 @@ footer {
   margin: 0;
 }
 
+*.font__deep {
+  color: #ff5484;
+}
+
 /* slide active */
 .slick-dots > li {
   margin: 0 15px;

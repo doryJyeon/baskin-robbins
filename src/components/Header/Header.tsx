@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
-import { HeaderContainer, HeaderWrapper, LogoImage, MenuDetailWrapper, MenuWrapper, SearchDiv, SearchWrapper, SignWrapper } from "./style"
+import { HeaderContainer, HeaderWrapper, LogoImage, MenuDetailWrapper, MenuWrapper, SearchDiv, SearchWrapper, Searchform, SignWrapper } from "./style"
 import { FaArrowRightFromBracket, FaRegCircleXmark, FaUser } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
+import { handleKeyDownEnter, handleSubitCheckSearchValue } from "../../utils/utilityFunctions";
 
 const Header = () => {
   const login = false;  // global
@@ -53,15 +54,6 @@ const Header = () => {
     setSearch(false);
     handleScroll();
   }
-
-  // search enter key
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Enter') {
-      event.preventDefault(); // 기본 Enter 동작 방지
-      const submitButton = document.querySelector<HTMLButtonElement>('button.submit');
-      if (searchInput!.value.trim()) submitButton?.click();
-    }
-  };
 
   return (
     <HeaderWrapper show={scroll}>
@@ -139,17 +131,17 @@ const Header = () => {
       </MenuDetailWrapper>
 
       <SearchDiv show={search}>
-        <form action="/search" >
+        <Searchform action="/search" >
           <input
             type="text"
             name="searchText"
             placeholder="제품명을 입력하세요"
-            onKeyDown={handleKeyDown}
+            onKeyDown={handleKeyDownEnter}
             onBlur={handleBlurSearch}
           />
           <button className="cancel" type="button" onClick={handleBlurSearch}><FaRegCircleXmark /></button>
-          <button className="submit" type="submit"><FaSearch /></button>
-        </form>
+          <button className="submit" type="submit" onClick={handleSubitCheckSearchValue}><FaSearch /></button>
+        </Searchform>
       </SearchDiv>
     </HeaderWrapper>
   )

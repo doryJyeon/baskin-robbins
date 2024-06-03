@@ -1,12 +1,14 @@
 import { Link, useLocation } from 'react-router-dom';
 import MoveLink from '../common/MoveLink';
 import TitleDesc from '../common/TitleDesc';
-import { HistoryImgWrapper, HistoryMenuWrapper, MenuThema, TypeWrapper } from './styled';
+import { TypeWrapper } from '../../styles/GlobalStyle';
+import { HistoryImgWrapper, HistoryMenuWrapper, MenuThema } from './styled';
 import { getDate } from '../../utils/dateUtils';
 import { checkActive } from '../../utils/utilityFunctions';
 import { useEffect, useState } from 'react';
 import { FlavorHistories, FlavorHistoryArr, HistoryType } from '../../interfaces/flavorHistory';
 import { fetchData } from '../../api/fetchData';
+import DataStateComponent from '../common/DataStateComponent';
 
 const History = () => {
   const location = useLocation();
@@ -36,7 +38,7 @@ const History = () => {
       }
     } catch (error) {
       console.error('Error fetching TotalMenus data:', error);
-      setDataState("error");
+      setDataState("Error");
     }
   };
 
@@ -77,9 +79,7 @@ const History = () => {
       </HistoryMenuWrapper>
 
       <HistoryImgWrapper>
-        {dataState === "Loading" && <TitleDesc title={"Loding..."} desc={"잠시만 기다려주세요..."} />}
-        {dataState === "Error" && <TitleDesc title={"Error..."} desc={"에러가 발생했습니다.<br />다시 시도해주세요!"} />}
-        {dataState === "No Data" && <TitleDesc title={"No Data..."} desc={undefined} />}
+        {dataState !== "" && <DataStateComponent getState={dataState} />}
         {data && data[1].map((item) => (
           <img src={`/images/flavor_history/${data[0]}/${item}`} alt="flavor history" />
         ))}

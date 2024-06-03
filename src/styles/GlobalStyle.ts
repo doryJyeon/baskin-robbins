@@ -104,4 +104,36 @@ export const MenuLinkWrapper = styled.ul`
     }
   }
 `
-// page menu style --------------------
+// page menu style -------------------- end
+
+// history & search menu detail type --------------------
+export const TypeWrapper = styled.ul`
+  width: 100%;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 0;
+  border-bottom: 1px solid ${colors.border};
+
+  > li {
+    width: 204px;
+    height: 100%;
+    border: 1px solid ${colors.border};
+    border-bottom: none;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: ${colors.disabled};
+    line-height: 60px;
+    text-align: center;
+
+    &.active {
+      border-bottom: 1px solid #fff;
+      color: ${colors.dark};
+    }
+  }
+`
+// history & search menu detail type -------------------- end

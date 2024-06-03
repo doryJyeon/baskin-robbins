@@ -5,14 +5,16 @@ export interface TotalMenu {
 export interface MenuInfo {
   description: string;
   img_url: string;
-  menus: Menus;
+  menus: {
+    [flavorName: string]: Menu
+  };
 }
 
-interface Menus {
-  menuName: {
-    img_url: string;
-    color: string;
-    tags: string;
-    tag_color: string;
-  }
+// menuDetail은 음료에만 있음
+export interface Menu {
+  img_url: string;
+  color: string;
+  tags: string;
+  tag_color: string;
+  menuDetail?: string;
 }

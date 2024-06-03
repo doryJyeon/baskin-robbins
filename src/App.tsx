@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './App.css'
 
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer';
 
 import HomePage from './pages/HomePage'
 import NotFoundPage from './pages/NotFoundPage'
-import Footer from './components/Footer/Footer';
 import MenuPage from './pages/MenuPage';
 import EventPage from './pages/EventPage';
 import PlazaPage from './pages/PlazaPage';
 import StoryPage from './pages/StoryPage';
 import StorePage from './pages/StorePage';
+import SearchPage from './pages/SearchPage';
 
 const App: React.FC = () => {
   return (
@@ -30,6 +30,8 @@ const App: React.FC = () => {
         <Route path="/story/:type" element={<StoryPage />} />
 
         <Route path="/store/:type" element={<StorePage />} />
+
+        <Route path="/search" element={<SearchPage />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
