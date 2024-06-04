@@ -12,6 +12,10 @@ export const MenusWrapper = styled.div`
   height: fit-content;
   margin-bottom: 50px;
   text-align: center;
+
+  @media (max-width: 999px) {
+    margin-bottom: 0;
+  }
 `
 
 // flavor of month style -----
@@ -19,11 +23,12 @@ export const FlavorMonth = styled.div`
   width: 100%;
   max-width: 1032px;
   margin: 80px auto 0;
-  color: ${colors.dark};
+  color: ${colors.fontDark};
 
   > article {
     padding: 60px 0 50px;
     border: 1px solid ${colors.border};
+    border-bottom: none;
     text-align: center;
 
     > h4 {
@@ -60,9 +65,40 @@ export const FlavorMonth = styled.div`
     margin: 80px 0 40px;
   }
 
-@media (max-width: 1160px) {
-  max-width: 780px;
-}
+  @media (max-width: 1160px) {
+    max-width: 780px;
+  }
+  @media (max-width: 999px) {
+    margin: 0 auto 0;
+
+    > article {
+      padding: 27px 0 40px;
+
+      > h4 {
+        font-size: .9rem;
+        font-weight: 400;
+      }
+      > h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: -.4px;
+      }
+      > p {
+        font-size: .875rem;
+        line-height: 1.4;
+      }
+      > hr {
+        width: 90%;
+        margin: 20px auto 27px;
+        height: 2px;
+      }
+    }
+
+    > h2 {
+      font-size: 1.1rem;
+      margin: 50px 0 37px;
+    }
+  }
 `
 
 export const FlavorWrapper = styled.ul`
@@ -84,6 +120,23 @@ export const FlavorWrapper = styled.ul`
       font-size: 1rem;
       font-weight: 500;
       margin: 0;
+    }
+  }
+  
+  @media (max-width: 999px) {
+    justify-content: space-around;
+    gap: 20px;
+
+    > li {
+      width: 25%;
+      > img {
+        width: auto;
+        max-width: 76.5px;
+      }
+      > P {
+        font-size: .57rem;
+        font-weight: 600;
+      }
     }
   }
 `
@@ -110,6 +163,31 @@ export const FlavorItemWrapper = styled.ul`
       margin: 20px 0 50px;
     }
   }
+  @media (max-width: 999px) {
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+
+    > li {
+      display: inline-block;
+      width: 216px;
+      height: 284px;
+      margin-right: 20px;
+      
+      > img {
+        border-radius: 10px;
+      }
+      > p {
+        font-size: .875rem;
+        margin: 0 0 0;
+        padding-left: 17px;
+        text-align: left;
+      }
+    }
+    > li:last-of-type {
+      margin-right: 0;
+    }
+  }
 `
 // flavor of month style ----- end
 
@@ -121,6 +199,11 @@ export const MenusUl = styled.ul`
   grid-template-columns: repeat(5, 1fr);
   width: 100%;
   gap: 0 3.5%;
+
+  @media (max-width: 999px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 18px;
+  }
 `
 export const MenuWrapper = styled.li<StyledProps>`
   width: 100%;
@@ -190,7 +273,7 @@ export const MenuWrapper = styled.li<StyledProps>`
   }
   
   /* hover */
-  &:hover {
+  &:hover, &:active {
     > div {
       background-color: ${props => props.bgColor || "#fff"};
 
@@ -198,11 +281,13 @@ export const MenuWrapper = styled.li<StyledProps>`
         color: ${props => props.tagColor || colors.font};
         opacity: 1;
         height: fit-content;
+        z-index: 10;
       }
 
       > img {
         width: 95%;
         top: 35%;
+        z-index: 1;
       }
     
       &.new__icon:after {
@@ -216,33 +301,86 @@ export const MenuWrapper = styled.li<StyledProps>`
     }
   }
 
-/* mobile */
-@media (max-width: 1270px) {
-  > div  {
-    > img {
-      width: 95%;
-      margin: 10% auto 0;
-    }
-    &.new__icon:after {
-      width: 50.25px;
-      height: 60.75px;
+  /* web 반응형 */
+  @media (max-width: 1270px) {
+    > div  {
+      > img {
+        width: 95%;
+        margin: 10% auto 0;
+      }
+      &.new__icon:after {
+        width: 50.25px;
+        height: 60.75px;
+      }
     }
   }
-}
-@media (max-width: 1160px) {
-  > div {
+  @media (max-width: 1160px) {
+    > div {
+      > p {
+        margin-top: 20px;
+        font-size: .9rem;
+      }
+      > img {
+        width: 100%;
+        margin: 15% auto 0;
+      }
+    }
     > p {
-      margin-top: 20px;
-      font-size: .9rem;
+      font-size: 1rem;
     }
-    > img {
+  }  
+  /* mobile */
+  @media (max-width: 999px) {
+    > div {
       width: 100%;
-      margin: 15% auto 0;
+      height: 155px;
+      border-radius: 15px;
+      
+      > p {
+        font-weight: 400;
+        font-size: .75rem;
+        margin-top: 15px;
+        padding: 0 3%;
+      }
+
+      > img {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+      }
+
+      &.new__icon:after {
+        width: 45.75px;
+        height: 60.75px;
+        top: 8%;
+        left: 20%;
+      }
+    }
+
+    > p {
+      margin-top: 11px;
+      font-weight: 500;
+      font-size: .75rem;
+
+      > p.menu__detail {
+        font-size: .75rem;
+      }
+    }
+    
+    /* hover */
+    &:hover, &:active {
+      > div { 
+        > img {
+          width: auto;
+          top: 25%;
+        }
+      
+        &.new__icon:after {
+          top: 30%;
+          left: 20%;
+        }
+      }
     }
   }
-  > p {
-    font-size: 1rem;
-  }
-}  
 `
 // menus style --------------- end

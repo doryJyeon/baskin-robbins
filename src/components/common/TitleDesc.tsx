@@ -42,4 +42,25 @@ const TitleDescWrapper = styled.div`
     font-weight: 600;
     margin-bottom: 100px;
   }
+
+  @media (max-width: 1024px) {
+    margin-top: 34px;
+
+    > h2 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin-bottom: 27px;
+    }
+    > h3 {
+      font-size: .875rem;
+      margin-bottom: 0;
+    }
+    > p {
+      margin-top: 7px;
+      font-size: .85rem;
+      line-height: 1.3;
+      font-weight: 500;
+      margin-bottom: 34px;
+    }
+  }
 `

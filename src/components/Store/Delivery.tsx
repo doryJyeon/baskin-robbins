@@ -10,24 +10,36 @@ const Delivery = () => {
       <DeliveryTitle>
         <h4>배스킨라빈스 모바일 사전주문 서비스</h4>
         <p>배스킨라빈스와 함께하는 달콤한 시간!<br />모바일 앱을 통해 간편하게 주문, 결제와 배달 예약 서비스를 이용하세요!</p>
-        <MoveButton className='red' text={'해피오더 주문하기'} to={'https://goo.gl/s7uxrP'} blank={true} />
+        <MoveButton className='red large' text={'해피오더 주문하기'} to={'https://goo.gl/s7uxrP'} blank={true} />
       </DeliveryTitle>
 
       <HappyOrderWrapper>
         <div>
-          <img src="/images/icons/delivery/icon_list_1_1.png" alt="order advantages" />
-          <h4>모바일에서 주문은 여유롭게!<br />기다리는 시간은 슬림하게!</h4>
-          <p>해피오더를 통해 모바일로 주문하고 원하는 시간에<br />픽업 또는 배달 서비스를 이용하세요!</p>
+          <div>
+            <img src="/images/icons/delivery/icon_list_1_1.png" alt="order advantages" />
+          </div>
+          <div>
+            <h4>모바일에서 주문은 여유롭게!<br />기다리는 시간은 슬림하게!</h4>
+            <p>해피오더를 통해 모바일로 주문하고 원하는 시간에<br className='only__pc' />픽업 또는 배달 서비스를 이용하세요!</p>
+          </div>
         </div>
         <div>
-          <img src="/images/icons/delivery/icon_list_1_2.png" alt="order advantages" />
-          <h4>모임 또는 행사, 단체<br />예약주문 서비스!</h4>
-          <p>원하는 날짜, 원하는 시간에 맞추어<br />제품을 미리 예약주문하세요!</p>
+          <div>
+            <img src="/images/icons/delivery/icon_list_1_2.png" alt="order advantages" />
+          </div>
+          <div>
+            <h4>모임 또는 행사, 단체<br className='only__pc' />예약주문 서비스!</h4>
+            <p>원하는 날짜, 원하는 시간에 맞추어<br />제품을 미리 예약주문하세요!</p>
+          </div>
         </div>
         <div>
-          <img src="/images/icons/delivery/icon_list_1_3.png" alt="order advantages" />
-          <h4>쿠폰, 적립, 할인들 다양한<br />멤버쉽 서비스!</h4>
-          <p>해피오더에서 제공되는 다양한<br />쿠폰과 해피포인트 적립 서비스!</p>
+          <div>
+            <img src="/images/icons/delivery/icon_list_1_3.png" alt="order advantages" />
+          </div>
+          <div>
+            <h4>쿠폰, 적립, 할인들 다양한<br className='only__pc' />멤버쉽 서비스!</h4>
+            <p>해피오더에서 제공되는 다양한<br className='only__pc' />쿠폰과 해피포인트 적립 서비스!</p>
+          </div>
         </div>
       </HappyOrderWrapper>
 

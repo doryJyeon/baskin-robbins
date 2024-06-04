@@ -100,12 +100,6 @@ const LoadMapWrapper = styled.div`
     width: 100%;
     top: -6vw;
   }
-
-/* @media (max-width: 980px) {
-  max-width: 550px;
-  width: 90%;
-} */
-
 `
 const TitleDesc = styled.div`
   display: flex;

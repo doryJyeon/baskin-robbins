@@ -41,7 +41,7 @@ const MenuPage = () => {
   }, [menuType]);
 
   return (
-    <InnerContainer top="160px">
+    <InnerContainer top="160px" mTop="114px" mBottom="126px">
       <MenuLinks menuType={menuType} />
 
       <MenusWrapper>

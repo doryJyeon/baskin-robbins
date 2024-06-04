@@ -33,6 +33,40 @@ export const DeliveryTitle = styled.section`
     background-position: right 30px center;
     margin-bottom: .5rem;
   }
+
+  @media (max-width: 999px) {
+    border-top: 2px solid ${colors.border};
+    margin-top: 30px;
+    padding-top: 34px;
+    margin-bottom: 34px;
+
+    > h3 {
+      font-size: 1.05rem;
+      margin-bottom: 12px;
+    }
+    > h4 {
+      font-size: 1.05rem;
+      margin-bottom: 12px;
+    }
+    > p {
+      font-size: .625rem;
+
+      &.small {
+        font-size: .8rem;
+      }
+    }
+    // MoveButton custom
+    > a.large {
+      min-width: 294px;
+      min-height: 44px;
+      padding: 0;
+      font-size: 1.2rem;
+      line-height: 44px;
+      background-position: right 50px center;
+      font-weight: 500;
+      margin-top: 24px;
+    }
+  }
 `
 
 export const HowToOrder = styled.section`
@@ -95,6 +129,20 @@ export const HowToOrder = styled.section`
       background-position: center;
     }
   }
+  > hr {
+    display: none;
+  }
+  // MoveButton custom
+  > a.large {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    padding: 0 60px 0 30px;
+    font-size: 1.2rem;
+    background-image: url("/images/icons/icon_arrow.png");
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+  }
   > ul.howto__desc {
     margin-top: 30px;
     text-align: left;
@@ -107,32 +155,91 @@ export const HowToOrder = styled.section`
     }
   }
 
-  // MoveButton custom
-  > a.large {
-    position: absolute;
-    bottom: 5px;
-    right: 0;
-    padding: 0 60px 0 30px;
-    font-size: 1.2rem;
-    background-image: url("/images/icons/icon_arrow.png");
-    background-repeat: no-repeat;
-    background-position: right 30px center;
-  }
-
-@media (max-width: 1100px) {
-  > ol.howto__img {
-    > li {
-      width: 290px;
-      height: 290px;
+  @media (max-width: 1100px) {
+    > ol.howto__img {
+      > li {
+        width: 290px;
+        height: 290px;
+      }
+    }
+    > a.large {
+      min-width: 160px;
+      padding: 0 40px 0 20px;
+      font-size: 1.2rem;
+      background-position: right 20px center;
     }
   }
-  > a.large {
-    min-width: 160px;
-    padding: 0 40px 0 20px;
-    font-size: 1.2rem;
-    background-position: right 20px center;
+  @media (max-width: 999px) {
+    margin: 0 auto 100px;
+
+    > h4 {
+      margin: 80px 0 44px;
+      font-size: 1.05rem;
+    }
+    > ol.howto__img {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      > li {
+        width: 254px;
+        height: 254px;
+
+        > img {
+          width: 30%;
+          margin-bottom: 5px;
+        }
+        > h4 {
+          margin: 10px 0 7px;
+          font-size: .875rem;
+        }
+        &:last-of-type > h4 {
+          margin-top: 25px;
+        }
+        > p {
+          font-size: .625rem;
+          margin-bottom: 40px;
+          font-weight: 500;
+        }
+      }
+      & > li:not(:last-of-type):after {
+        right: 50%;
+        top: 100%;
+        margin: 7px -10px 0 0;
+        transform: rotate(90deg);
+      }
+    }
+    > hr {
+      display: block;
+      height: 1px;
+      width: 100%;
+      border: none;
+      background-color: ${colors.border};
+      margin-top: 50px;
+    }
+    // MoveButton custom
+    > a.large {
+      position: relative;
+      min-width: 294px;
+      min-height: 44px;
+      padding: 0;
+      font-size: 1.2rem;
+      line-height: 44px;
+      background-position: right 50px center;
+      margin-bottom: 0;
+      font-weight: 500;
+      margin-top: 50px;
+    }
+    > ul.howto__desc {
+      margin-left: 3vw;
+
+      > li {
+        font-size: .6875rem;
+        padding-left: 1px;
+        font-weight: 400;
+      }
+    }
   }
-}
 `
 
 // delivery ---------------------------------
@@ -155,31 +262,83 @@ export const HappyOrderWrapper = styled.section`
     flex-direction: column;
     justify-content: end;
 
-    > img {
-      width: auto;
-      height: auto;
-      max-height: 115px;
-      max-width: 163px;
-      display: block;
-      margin: auto;
+    > div:first-of-type {
+      width: 100%;
+      height: 114px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+
+      > img {
+        width: auto;
+        height: auto;
+        max-height: 115px;
+        max-width: 163px;
+        display: block;
+        margin: auto;
+      }
     }
-    > h4 {
-      margin-bottom: 10px;
-      font-size: 1.25rem;
-      line-height: 1.25;
-      font-weight: 600;
+    > div:last-of-type {
+      text-align: center;
+      > h4 {
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+        line-height: 1.25;
+        font-weight: 600;
+      }
+      > p {
+        font-size: .8rem;
+        font-weight: 500;
+        line-height: 1.3;
+        word-break: keep-all;
+        margin-bottom: 10px;
+      }
     }
-    > p {
-      font-size: .8rem;
-      font-weight: 500;
-      line-height: 1.3;
-      word-break: keep-all;
+  }
+  @media (max-width: 999px) {
+    flex-direction: column;
+    gap: 0;
+
+    > div {
+      width: 100%;
+      min-height: 175px;
+      padding: 37px 25px;
+      text-align: left;
+      box-sizing: border-box;
       margin-bottom: 10px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+
+      > div:first-of-type {
+        width: 30%;
+        height: 100%;
+        margin-bottom: 0;
+        display: inline-block;
+
+        > img {
+          max-height: 71px;
+          max-width: 96px;
+        }
+      }
+      > div:last-of-type {
+        width: 70%;
+        text-align: left;
+        > h4 {
+          margin-bottom: 6px;
+          font-size: 0.875rem;
+        }
+        > p {
+          font-size: .625rem;
+          margin-bottom: 0;
+        }
+      }
     }
   }
 `
 
-export const OtherAppWrapper = styled.article`
+export const OtherAppWrapper = styled.section`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -220,6 +379,43 @@ export const OtherAppWrapper = styled.article`
       font-size: .95rem;
     }
   }
+  @media (max-width: 999px) {
+    margin-bottom: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(2, 1fr);
+    justify-content: center;
+    gap: 0 15px;
+    
+    > h3 {
+      margin-top: 50px;
+      grid-column: span 2;
+      font-size: 1.05rem;
+      line-height: 1.4;
+      font-weight: 600;
+      margin-bottom: 35px;
+    }
+
+    > div {
+      margin-bottom: 30px;
+      > img {
+        max-width: 154px;
+        max-height: 154px;
+      }
+      > p {
+        margin: 5px 0 5px;
+        font-size: .875rem;
+      }
+      > a {
+        min-width: 120px;
+        min-height: 30px;
+        font-size: .625rem;
+        line-height: 30px;
+      }
+    }
+    > div:nth-child(3), > div:nth-child(4) {
+      grid-row: 3;
+    }
+  }
 `
 // delivery --------------------------------- end
 
@@ -228,6 +424,10 @@ export const CateringWrapper = styled.section`
   width: 100%;
   max-width: 1000px;
   margin: 50px auto 0;
+
+  @media (max-width: 999px) {
+    margin: 30px auto 0;
+  }
 `
 
 export const Caterings = styled.article`
@@ -291,6 +491,61 @@ export const Caterings = styled.article`
             border-radius: 12.5px;
             line-height: 25px;
             text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 999px) {
+    flex-direction: column;
+    min-height: 418px;
+    margin-bottom: 7px;
+
+    > div:first-of-type {
+      width: 50%;
+      min-height: 168px;
+      height: 100%;
+      background-size: contain;
+      margin: 30px auto 0;
+
+      &.bg_bottom {
+        background-position: center bottom;
+      }
+    }
+
+    > div:nth-of-type(n+2) {
+      width: calc(100% - 60px);
+      padding: 0 30px;
+
+      > p.small {
+        margin-top: 10px;
+        margin-bottom: 7px;
+        font-size: .6875rem;
+      }
+      > h4 {
+        font-size: 1.1rem;
+        
+        &.font__deep {
+          font-size: 1.31rem;
+        }
+      }
+
+      > div {
+        margin-top: 16px;
+
+        > div {
+          > p {
+            font-size: .6875rem;
+            line-height: 1.3;
+            font-weight: 500;
+
+            &.round_title {
+              width: 68px;
+              height: 21px;
+              margin-bottom: 10px;
+              line-height: 21px;
+            }
           }
         }
       }

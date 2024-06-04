@@ -8,7 +8,7 @@ interface Props {
 
 const StoryLinks: React.FC<Props> = ({ menuCheck }) => {
   return (
-    <MenuLinkWrapper>
+    <MenuLinkWrapper mobileHide={true}>
       <MoveLink text={"배달주문"} to={"store/delivery"} isLi={true} isActive={checkActive(menuCheck, "delivery")} />
       <MoveLink text={"단체주문"} to={"store/catering"} isLi={true} isActive={checkActive(menuCheck, "catering")} />
     </MenuLinkWrapper>

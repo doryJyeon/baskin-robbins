@@ -135,13 +135,15 @@ const Catering = () => {
           </li>
         </ol>
 
+        <hr />
+
+        <MoveButton className="red large" text={"주문서 접수하기"} to={'https://www.baskinrobbins.co.kr/store/catering-order.php'} blank={true} />
+
         <ul className="howto__desc">
-          <li>배달 서비스는 인근 매장에서 진행되며, 단체 주문 시 배달비 무료 혜택을 드립니다. (단, 매장 상황에 따라 배달 서비스가 제한될 수 있습니다.)</li>
+          <li>배달 서비스는 인근 매장에서 진행되며, 단체 주문 시 배달비 무료 혜택을 드립니다. <br className='only__mobile' />(단, 매장 상황에 따라 배달 서비스가 제한될 수 있습니다.)</li>
           <li>문의: 월~금 AM 9:00 ~ PM 6:00</li>
           <li>연락처 : 010-2881-9236</li>
         </ul>
-
-        <MoveButton className="red large" text={"주문서 접수하기"} to={'https://www.baskinrobbins.co.kr/store/catering-order.php'} blank={true} />
       </HowToOrder>
     </>
   );

@@ -10,8 +10,6 @@ interface MenuThema {
 }
 
 // flavor history -----------------------
-// type ---------------------------------
-// type menu style은 global에 있음
 export const HistoryMenuWrapper = styled.div<HistoryMenuWrapper>`
   width: 100%;
   margin: 50px auto 100px;
@@ -61,8 +59,62 @@ export const HistoryMenuWrapper = styled.div<HistoryMenuWrapper>`
       display: ${props => props.show === "thema" ? "flex" : "none"};
 
       > li {
-        padding: 0 30px 0 70px;
+        padding: 0 30px 0 67px;
         font-weight: 600;
+      }
+    }
+  }
+  > div.menu__year__mobile {
+    display: none;
+  }
+  
+  @media (max-width: 999px) {
+    margin: 34px auto 48px;
+    
+    > ul {
+      display: block;
+      white-space: nowrap;
+      overflow-y: hidden;
+      overflow-x: auto;
+      height: 38px;
+      
+      > li {
+        padding: 0 20px;
+        font-size: 1.1rem;
+      }
+      > li:first-of-type {
+        margin-left: 33px;
+      }
+
+      &.menu__year {
+        display: none;
+      }
+      &.menu__thema {
+        display: ${props => props.show === "thema" ? "flex" : "none"};
+      }
+    }  
+    > div.menu__year__mobile {
+      display: ${props => props.show === "year" ? "flex" : "none"};
+      justify-content: center;
+      align-items: center;
+      color: #444;
+
+      > div {
+        border-bottom: 3px solid #444;
+
+        > select {
+          border: none;
+          outline: none;
+          font-size: 1.875rem;
+          color: #444;
+          font-weight: 600;
+          padding-right: 10px;
+          margin: 0 0 0 15px;
+        }
+      }
+      > span {
+        padding-left: 10px;
+        font-size: 1.25rem;
       }
     }
   }
@@ -105,6 +157,22 @@ export const HistoryImgWrapper = styled.ol`
     max-width: 300px;
     height: auto;
   }
+  
+  @media (max-width: 1100px) {
+    > img {
+      width: 25%;
+    }
+  }
+  @media (max-width: 900px) {
+    > img {
+      width: 33.3333%;
+    }
+  }
+  @media (max-width: 600px) {
+    > img {
+      width: 50%;
+    }
+  }
 `
 // flavor history ----------------------- end
 
@@ -113,6 +181,7 @@ export const BetterWrapper = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `
 
 export const Better = styled.article`
@@ -179,38 +248,85 @@ export const Better = styled.article`
     }
   }
 
-@media (max-width: 1160px) {
-  > div {
-    > h3 {
-      font-size: 2rem;
-    }
-    > p {
-      font-size: 1.3rem;
-      margin-top: 15px;
-    }
-    > p.small {
-      margin-top: 15px;
-    }
-    
-    > ul {
-      padding-left: 30px;
-      > li {
-        min-height: 26px;
-        font-weight: 500;
+  @media (max-width: 1160px) {
+    > div {
+      > h3 {
+        font-size: 2rem;
+      }
+      > p {
+        font-size: 1.3rem;
+        margin-top: 15px;
+      }
+      > p.small {
+        margin-top: 15px;
+      }
+      
+      > ul {
+        padding-left: 30px;
+        > li {
+          min-height: 26px;
+          font-weight: 500;
+        }
       }
     }
   }
-}
-@media (max-width: 1060px) {
-  > div {
-    > p {
-      margin-top: 10px;
-    }
-    > p.small {
-      margin-top: 5px;
+  @media (max-width: 1060px) {
+    > div {
+      > p {
+        margin-top: 10px;
+      }
+      > p.small {
+        margin-top: 5px;
+      }
     }
   }
-}
+  @media (max-width: 999px) {
+    max-width: 533px;
+    flex-direction: column;
+    gap: 34px;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 67px;
+    
+    > img {
+      width: 100%;
+      max-width: auto;
+    }
+    
+    > div {
+      padding: 0 17px 23px;
+      margin: 0;
+
+      > h3 {
+        font-size: 1.875rem;
+      }
+      > p {
+        font-size: 1.05rem;
+        margin-top: 24px;
+      }
+      > p.small {
+        font-size: .875rem;
+        margin-top: 14px;
+        margin-bottom: 20px;
+      }
+
+      > ul {
+        padding-left: 0;
+        > li {
+          padding-left: 26px;
+          font-size: .6875rem;
+          min-height: 26px;
+          list-style: none;
+          background-image: url("/images/icons/icon_check.jpg");
+          background-size: auto 15px;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
 `
 
 // be better ---------------------------- end

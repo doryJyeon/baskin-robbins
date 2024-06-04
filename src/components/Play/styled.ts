@@ -9,37 +9,6 @@ interface PlazaStyledProps {
   bgColor?: string;
 }
 
-// event type ---------------------------------
-export const EventTypeWrapper = styled.ul`
-  width: 100%;
-  height: 61px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  gap: 0;
-  border-bottom: 1px solid ${colors.border};
-
-  > li {
-    width: 204px;
-    height: 100%;
-    border: 1px solid ${colors.border};
-    border-bottom: none;
-    border-radius: 16px 16px 0 0;
-    margin-bottom: -1px;
-    margin-left: -1px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: ${colors.disabled};
-    line-height: 60px;
-    text-align: center;
-
-    &.active {
-      border-bottom: 1px solid #fff;
-      color: ${colors.dark};
-    }
-  }
-`
-
 // event items --------------------------
 export const EventWrapper = styled.ul`
   width: 100%;
@@ -48,6 +17,15 @@ export const EventWrapper = styled.ul`
   display: grid;
   grid: auto / repeat(2, 1fr);
   gap: 0 50px;
+
+  @media (max-width: 999px) {
+    grid: auto / 1fr;
+    margin-bottom: 0;
+
+    > li:first-of-type {
+      margin-top: 37px;
+    }
+  }
 `
 
 export const EventDiv = styled.li<EventStyledProps>`
@@ -70,7 +48,7 @@ export const EventDiv = styled.li<EventStyledProps>`
       position: absolute;
       width: 70px;
       height: 34px;
-      background-color: ${colors.primary};
+      background-color: ${colors.deep};
       padding-top: 36px;
       border-radius: 100%;
       font-size: 1rem;
@@ -90,18 +68,8 @@ export const EventDiv = styled.li<EventStyledProps>`
       border-radius: 12px;
       z-index: 1;
     }
-
-    > div {
-      width: 100%;
-      max-width: 295px;
-      height: 100%;
-      max-height: 295px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 12px;
-    }
   }
+
   > div:last-of-type {
     padding: 0 15px 0 6%;
     width: 59%;
@@ -124,11 +92,48 @@ export const EventDiv = styled.li<EventStyledProps>`
     }
   }
 
-@media (max-width: 1270px) {
-  > div:last-of-type > h3 {
-    font-size: 1.1rem;
+  @media (max-width: 1270px) {
+    > div:last-of-type > h3 {
+      font-size: 1.1rem;
+    }
   }
-}
+
+  @media (max-width: 999px) {
+    max-height: 160px;
+    margin-top: 14px;
+
+    > div:first-of-type {
+      max-width: 160px;
+
+      > p {
+        width: 38px;
+        height: 20px;
+        padding-top: 18px;
+        font-size: .625rem;
+        top: -14px;
+        right: 8px;
+      }
+
+      > img {
+        max-width: 160px;
+      }
+    }
+
+    > div:last-of-type {
+      padding: 0 16px;
+      min-width: 59%;
+      width: calc(100% - 160px);
+
+      > p {
+        font-size: .75rem;
+      }
+      > h3 {
+        font-size: .875rem;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+    }
+  }
 `
 // event items -------------------------- end
 
@@ -138,6 +143,11 @@ export const PlazaWrapper = styled.div`
   gap: 10px;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 999px) {
+    flex-direction: column;
+    gap: 14px;
+  }
 `
 export const PlazaDetail = styled.div<PlazaStyledProps>`
   width: 33%;
@@ -177,10 +187,31 @@ export const PlazaDetail = styled.div<PlazaStyledProps>`
     }
   }
 
-@media (max-width: 1160px) {
-  > h2 {
-    font-size: 1.7rem;
+  @media (max-width: 1160px) {
+    > h2 {
+      font-size: 1.7rem;
+    }
   }
-}
+  @media (max-width: 999px) {
+    width: 100%;
+    height: 155px;
+
+    > p {
+      font-size: .75rem;
+    }
+
+    > h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 5px;
+    }
+    > a, > div > a {
+      margin-top: 12px;
+      min-height: 36px;
+      min-width: 110px;
+      font-size: .75rem;
+      line-height: 36px;
+    }
+  }
 `
 // plaza detail ------------------------- end

@@ -1,8 +1,13 @@
 import { styled } from "styled-components"
 
+interface MenuLinkProps {
+  mobileHide?: boolean;
+}
 interface InnerContainerProps {
   top?: string;
   bottom?: string;
+  mTop?: string;
+  mBottom?: string;
 }
 
 export const colors = {
@@ -48,19 +53,25 @@ export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
 
-  @media (max-width: 980px) {
-    max-width: 550px;
-    width: 90%;
+  @media (max-width: 1024px) {
+    max-width: 94vw;
+    width: 94vw;
+    position: relative;
   }
 `;
 
 export const InnerContainer = styled(Container) <InnerContainerProps>`
   padding-top: ${props => props.top ? props.top : "80px"};
   padding-bottom: ${props => props.bottom ? props.bottom : "100px"};
+
+  @media (max-width: 999px) {
+    padding-top: ${props => props.mTop ? props.mTop : "57px"};
+    padding-bottom: ${props => props.mBottom ? props.mBottom : "100px"};
+  }
 `
 
 // page menu style --------------------
-export const MenuLinkWrapper = styled.ul`
+export const MenuLinkWrapper = styled.ul<MenuLinkProps>`
   text-align: center;
   width: 100%;
   height: 1.6rem;
@@ -103,10 +114,49 @@ export const MenuLinkWrapper = styled.ul`
       margin: 0 25px;
     }
   }
+  
+  @media (max-width: 999px) {
+    width: 100vw;
+    height: 47px;
+    line-height: 2rem;
+    display: ${props => props.mobileHide ? "none" : "inline-block"};
+    white-space: nowrap;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    margin-left: -3vw;
+    padding-left: 20px;
+    overflow-x: scroll;
+
+    li {
+      height: 32px;
+      font-weight: 500;
+      display: inline-block;
+      margin-right: 20px;
+      
+      &::before {
+        content: "";
+        width: 0;
+        height: 0;
+      }
+
+      &.active {
+        border-radius: 16px;
+      }
+
+      > a {
+        margin: 0 15px;
+      }
+    }
+    li:last-of-type {
+      margin-right: 40px;
+    }
+  }
+
 `
 // page menu style -------------------- end
 
-// history & search menu detail type --------------------
+// event & history & search menu detail type --------------------
 export const TypeWrapper = styled.ul`
   width: 100%;
   height: 61px;
@@ -133,6 +183,36 @@ export const TypeWrapper = styled.ul`
     &.active {
       border-bottom: 1px solid #fff;
       color: ${colors.dark};
+    }
+  }
+
+  @media (max-width: 999px) {width: 100%;
+    height: 47px;
+    border: 2px solid ${colors.border};
+    margin-top: 24px;
+
+    > li {
+      flex-grow: 1;
+      width: auto;
+      height: 100%;
+      border: none;
+      border-left: 1px solid ${colors.border};
+      border-radius: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 47px;
+      color: ${colors.dark};
+
+      &.active {
+        border-bottom: none;
+        background-color: ${colors.primary};
+        color: #fff;
+      }
+    }
+    > li:first-of-type {
+      border: none;
     }
   }
 `

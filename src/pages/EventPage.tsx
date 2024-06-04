@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { InnerContainer } from "../styles/GlobalStyle";
+import { InnerContainer, TypeWrapper } from "../styles/GlobalStyle";
 import TitleDesc from "../components/common/TitleDesc";
 import PlayLinks from "../components/Play/PlayLinks";
-import { EventTypeWrapper, EventWrapper } from "../components/Play/styled";
+import { EventWrapper } from "../components/Play/styled";
 import { Event } from "../interfaces/events";
 import MoveLink from "../components/common/MoveLink";
 import { checkActive } from "../utils/utilityFunctions";
@@ -52,11 +52,11 @@ const EventPage = () => {
 
       <TitleDesc title={"Event"} desc={"배스킨라빈스와 함께 해피포인트앱/오프라인 매장에서 진행하는 <br/>다양한 이벤트를 확인해보세요"} />
 
-      <EventTypeWrapper>
+      <TypeWrapper>
         <MoveLink text={"전체"} to={"play/event/all"} isLi={true} isActive={checkActive(type, "all")} />
         <MoveLink text={"프로모션"} to={"play/event/promotion"} isLi={true} isActive={checkActive(type, "promotion")} />
         <MoveLink text={"제휴혜택"} to={"play/event/benefit"} isLi={true} isActive={checkActive(type, "benefit")} />
-      </EventTypeWrapper>
+      </TypeWrapper>
 
       {dataState !== "" && <DataStateComponent getState={dataState} />}
       {data && (

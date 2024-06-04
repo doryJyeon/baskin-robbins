@@ -11,7 +11,7 @@ const FlavorOfMonth = () => {
         <article>
           <h4>Would U Like Bon Bon</h4>
           <h3>우주 라이크 봉봉</h3>
-          <p>넛츠 초코&밀크 초코, 바닐라에 달콤한 초코 아몬드 리본과 바삭한 초코 프레첼 볼이 가득!</p>
+          <p>넛츠 초코&밀크 초코, 바닐라에 달콤한 초코 아몬드 리본과<br className='only__mobile' /> 바삭한 초코 프레첼 볼이 가득!</p>
           <hr />
           <FlavorWrapper>
             <li>

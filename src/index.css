@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
 }
 
+
 li {
   list-style: none;
 }
@@ -65,4 +66,43 @@ li.slick-active::after {
 }
 li.slick-active > div {
   background-color: transparent !important;
+}
+
+
+/* 스크롤바 */
+@media (max-width: 1024px) {
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 4px;
+  }
+  body::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+    background: #F986BC;
+    border-radius: 4px;
+  }
+  body::-webkit-scrollbar-track {
+    background: rgba(249, 134, 188, .1);
+  }
+}
+
+
+/* mobile show hide */
+.only__pc {
+  display: inline-block;
+}
+@media (max-width: 1024px) {
+  .only__pc {
+    display: none;
+  }
+}
+
+.only__mobile {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .only__mobile {
+    display: inline-block;
+  }
 }
