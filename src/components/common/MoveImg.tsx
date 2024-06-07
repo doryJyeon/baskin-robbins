@@ -6,17 +6,19 @@ interface Props {
   src: string;
   alt?: string;
   blank?: boolean;
+  mobileImg?: boolean;
 }
 
-const MoveImg: React.FC<Props> = ({ to, src, alt, blank }) => {
+const MoveImg: React.FC<Props> = ({ to, src, alt, blank, mobileImg }) => {
+  const imgRoot = mobileImg ? "m_images" : "images"
   return (
     blank ? (
       <a href={to} target="_blank" rel="noopener noreferrer">
-        <img src={`/images/${src}`} alt={alt} />
+        <img src={`/${imgRoot}/${src}`} alt={alt} />
       </a>
     ) : (
       <MoveImgWrapper to={`/${to}`}>
-        <img src={`/images/${src}`} alt={alt} />
+        <img src={`/${imgRoot}/${src}`} alt={alt} />
       </MoveImgWrapper>
     )
   );

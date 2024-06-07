@@ -30,10 +30,6 @@ a:hover {
   opacity: .6;
 }
 
-.fontEn {
-  font-family: "Kanit", sans-serif;
-}
-
 #root {
   min-width: 100vw;
   min-height: 100vh;
@@ -105,4 +101,9 @@ li.slick-active > div {
   .only__mobile {
     display: inline-block;
   }
+}
+
+.slider__custom__margin .slick-slide > div{
+  display: inline-block;
+  margin-right: 27px;
 }

@@ -1,6 +1,6 @@
 import { BgDot } from "../../styles/GlobalStyle";
 import MoveImg from "../common/MoveImg";
-import { EventWrapper, HomeImageWrapper, HomeWrapper } from "./styleHomeMain";
+import { EventWrapper, HomeImageWrapper, HomeWrapper, MobileHomeImg } from "./styleHomeMain";
 
 const HomeMain = () => (
   <BgDot>
@@ -15,6 +15,12 @@ const HomeMain = () => (
         </EventWrapper>
       </HomeImageWrapper>
     </HomeWrapper>
+    <MobileHomeImg>
+      <div>
+        <img className="hero__frame" src="/m_images/main/bg_hero_frame.png" alt="frame" />
+        <img className="hero__content" src="/m_images/main/home_hero.png" alt="home hero" />
+      </div>
+    </MobileHomeImg>
   </BgDot>
 )
 

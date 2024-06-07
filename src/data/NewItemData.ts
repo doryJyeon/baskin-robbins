@@ -1,7 +1,7 @@
 interface NewItem {
   0: string,
   1: string,
-  2: string | null
+  2: string
 }
 
 /**
@@ -20,7 +20,7 @@ export const NewItemData: NewItems[] = [
     [
       "wonderland_shooting_star.jpg",
       "이상한 나라의 슈팅스타",
-      ""
+      "#cdb4db"
     ],
     [
       "wachuone_shake.jpg",
@@ -47,7 +47,7 @@ export const NewItemData: NewItems[] = [
     [
       "dino_jelly.jpg",
       "디노 젤리",
-      ""
+      "#f77f00"
     ],
     [
       "earl_gray_blast.jpg",

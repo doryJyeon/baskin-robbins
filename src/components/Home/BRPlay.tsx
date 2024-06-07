@@ -2,17 +2,44 @@ import { styled } from "styled-components";
 import { InnerContainer } from "../../styles/GlobalStyle";
 import SectionTitle from "../common/SectionTitle";
 import MoveImg from "../common/MoveImg";
+import useStore from "../../store";
+import Slider from "react-slick";
 
 const BRPlay = () => {
+  const isMobile = useStore((state) => state.isMobile);
+
+  // [0]: pc-none, [1]: mobile
+  const sliderSettings = {
+    dots: false,
+    nextArrow: <></>,
+    prevArrow: <></>,
+    infinite: false,
+    speed: 1000,
+    slidesToShow: 1.5,
+    slidesToScroll: 1,
+    swipeToSlide: true
+  };
+
   return (
     <BgBrown>
-      <InnerContainer>
+      <InnerContainer mTop="67px" mBottom="77px">
         <SectionTitle title={"BR Play"} color="#37110e" subTitle="배라와 함께한 당신의 다양한 의견을 듣습니다" />
 
-        <PlayWrapper>
-          <MoveImg to={"my_flavor_list"} src={"main/my_flavor_list.png"} alt="My flavor list" />
-          <MoveImg to={"br_plaza"} src={"main/br_plaza.png"} alt="배라광장" />
-        </PlayWrapper>
+        {window.innerWidth < 780 ? (
+          <PlayWrapper>
+            <div className="slider-container">
+              <Slider {...sliderSettings}>
+                <MoveImg mobileImg={true} to={"my_flavor_list"} src={"main/my_flavor_list.png"} alt="My flavor list" blank={true} />
+                <MoveImg mobileImg={true} to={"br_plaza"} src={"main/br_plaza.png"} alt="배라광장" blank={true} />
+              </Slider>
+            </div>
+          </PlayWrapper>
+        ) : (
+          <PlayWrapper>
+            <MoveImg to={"my_flavor_list"} src={"main/my_flavor_list.png"} alt="My flavor list" blank={true} />
+            <MoveImg to={"br_plaza"} src={"main/br_plaza.png"} alt="배라광장" blank={true} />
+          </PlayWrapper>
+        )}
       </InnerContainer>
     </BgBrown>
   );
@@ -67,5 +94,27 @@ const PlayWrapper = styled.div`
 
   img {
     width: 360px;
+  }
+
+  @media (max-width: 780px) {
+    display: inline-block;
+    width: 100vw;
+    margin: 0 0 0 -3vw;
+    padding: 20px 0;
+
+    a {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    a:hover {
+      opacity: 0.8;
+      transform: none !important;
+    }
+    
+    img {
+      width: 100%;
+      max-width: 360px;
+    }
   }
 `

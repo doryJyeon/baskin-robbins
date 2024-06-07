@@ -39,6 +39,13 @@ export const BgDot = styled.div`
   background-size: auto;
   background-repeat: repeat;
 `
+export const BgDotMobileOnly = styled.div`
+  @media (max-width: 999px) {
+    background-image: url("/images/main/bg_hero.jpg");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+`
 export const BgLightPink = styled.div`
   background-color: ${colors.light};
 `
@@ -67,6 +74,20 @@ export const InnerContainer = styled(Container) <InnerContainerProps>`
   @media (max-width: 999px) {
     padding-top: ${props => props.mTop ? props.mTop : "57px"};
     padding-bottom: ${props => props.mBottom ? props.mBottom : "100px"};
+  }
+`
+
+export const MainInnerContainer = styled(Container) <InnerContainerProps>`
+  padding-top: ${props => props.top ? props.top : "80px"};
+  padding-bottom: ${props => props.bottom ? props.bottom : "100px"};
+
+  @media (max-width: 999px) {
+    padding-top: ${props => props.mTop ? props.mTop : "67px"};
+    padding-bottom: ${props => props.mBottom ? props.mBottom : "87px"};
+
+    max-width: 100vw;
+    width: 100vw;
+    margin: 0;
   }
 `
 
