@@ -11,12 +11,15 @@ import { fetchData } from "../api/fetchData";
 import SearchResult from "../components/Search/SearchResult";
 import { useLocation } from "react-router-dom";
 import DataStateComponent from "../components/common/DataStateComponent";
+import useStore from "../store";
 
 const StoryPage = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const searchText = queryParams.get("searchText") || "";
   const searchType = queryParams.get("searchType") || "all";
+
+  const { isMobile } = useStore((state) => state);
 
   const [data, setData] = useState<TotalMenu | null>(null);
   const [dataState, setDataState] = useState("Loading");
@@ -50,7 +53,7 @@ const StoryPage = () => {
     });
 
     setDataLength(count);
-    count > 0 ? setDataState("") : setDataState("No Data");
+    setDataState("");
     return filteredData;
   };
 
@@ -95,15 +98,17 @@ const StoryPage = () => {
         <span className="font__deep">{searchText}</span> 검색 결과 총 {dataLength}건
       </SearchResultH4>
 
-      <TypeWrapper>
-        <MoveLink text={"전체"} to={`search?searchText=${searchText}`} isLi={true} isActive={checkActive(searchType, "all")} />
-        <MoveLink text={"아이스크림"} to={`search?searchText=${searchText}&searchType=ice_cream`} isLi={true} isActive={checkActive(searchType, "ice_cream")} />
-        <MoveLink text={"프리팩"} to={`search?searchText=${searchText}&searchType=prepack`} isLi={true} isActive={checkActive(searchType, "prepack")} />
-        <MoveLink text={"아이스크림 케이크"} to={`search?searchText=${searchText}&searchType=ice_cream_cake`} isLi={true} isActive={checkActive(searchType, "icecream_cake")} />
-        <MoveLink text={"디저트"} to={`search?searchText=${searchText}&searchType=dessert`} isLi={true} isActive={checkActive(searchType, "dessert")} />
-        <MoveLink text={"음료"} to={`search?searchText=${searchText}&searchType=beverage`} isLi={true} isActive={checkActive(searchType, "beverage")} />
-        <MoveLink text={"커피"} to={`search?searchText=${searchText}&searchType=coffee`} isLi={true} isActive={checkActive(searchType, "coffee")} />
-      </TypeWrapper>
+      {isMobile || (
+        <TypeWrapper>
+          <MoveLink text={"전체"} to={`search?searchText=${searchText}`} isLi={true} isActive={checkActive(searchType, "all")} />
+          <MoveLink text={"아이스크림"} to={`search?searchText=${searchText}&searchType=ice_cream`} isLi={true} isActive={checkActive(searchType, "ice_cream")} />
+          <MoveLink text={"프리팩"} to={`search?searchText=${searchText}&searchType=prepack`} isLi={true} isActive={checkActive(searchType, "prepack")} />
+          <MoveLink text={"아이스크림 케이크"} to={`search?searchText=${searchText}&searchType=ice_cream_cake`} isLi={true} isActive={checkActive(searchType, "icecream_cake")} />
+          <MoveLink text={"디저트"} to={`search?searchText=${searchText}&searchType=dessert`} isLi={true} isActive={checkActive(searchType, "dessert")} />
+          <MoveLink text={"음료"} to={`search?searchText=${searchText}&searchType=beverage`} isLi={true} isActive={checkActive(searchType, "beverage")} />
+          <MoveLink text={"커피"} to={`search?searchText=${searchText}&searchType=coffee`} isLi={true} isActive={checkActive(searchType, "coffee")} />
+        </TypeWrapper>
+      )}
 
       {dataState !== ""
         ? (
@@ -111,7 +116,7 @@ const StoryPage = () => {
             ? <DataStateComponent getState={"No Text"} />
             : <DataStateComponent getState={dataState} />
         ) : (
-          data === null || data === undefined
+          data === null || Object.keys(data).length === 0
             ? <NoResult>검색 결과가 없습니다</NoResult>
             : <SearchResult data={data} />
         )

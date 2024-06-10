@@ -9,6 +9,15 @@ export const SearchResultH4 = styled.h4`
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
+
+  @media (max-width: 999px) {
+    width: calc(100% - 34px);
+    padding: 0 17px;
+    margin: 44px 0 -36px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: ${colors.font};
+  }
 `
 
 export const NoResult = styled.h2`
@@ -19,6 +28,10 @@ export const NoResult = styled.h2`
   margin-top: 80px;
   margin-bottom: 50px;
   text-align: center;
+
+  @media (max-width: 999px) {
+    color: ${colors.border};
+  }
 `
 
 export const SearchWrapper = styled(MenusUl)`
