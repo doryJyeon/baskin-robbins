@@ -2,12 +2,9 @@ import { styled } from "styled-components";
 import { InnerContainer } from "../../styles/GlobalStyle";
 import SectionTitle from "../common/SectionTitle";
 import MoveImg from "../common/MoveImg";
-import useStore from "../../store";
 import Slider from "react-slick";
 
 const BRPlay = () => {
-  const isMobile = useStore((state) => state.isMobile);
-
   // [0]: pc-none, [1]: mobile
   const sliderSettings = {
     dots: false,

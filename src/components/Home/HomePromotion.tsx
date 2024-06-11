@@ -4,13 +4,13 @@ import MoveImg from "../common/MoveImg";
 import SectionTitle from "../common/SectionTitle";
 import Slider from "react-slick";
 import { Event } from "../../interfaces/events";
-import useStore from "../../store";
+import useMobileStore from "../../store/useMobileStore";
 interface Props {
   eventData: Event;
 }
 
 const HomePromotion: React.FC<Props> = ({ eventData }) => {
-  const { isMobile, sizeW } = useStore((state) => state);
+  const { isMobile, sizeW } = useMobileStore();
   const slideItems = sizeW < 580 ? 1.5 : (sizeW < 780 ? 2.3 : 3.5);
 
   // [0]: pc, [1]: mobile

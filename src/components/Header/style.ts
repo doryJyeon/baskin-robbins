@@ -6,7 +6,6 @@ const mobileHeight = "42px";
 
 interface Props {
   show: boolean;
-  active?: boolean;
 }
 interface DetailProps {
   show: boolean;
@@ -91,7 +90,7 @@ export const MobileMenuIcon = styled.button<Props>`
   > div {
     width: 17px;
     height: 2px;
-    background-color: #807168;
+    background-color: ${props => props.show ? "#fff" : "#807168"};
     transition: all .3s linear;
   }
 
@@ -142,10 +141,11 @@ export const SearchWrapper = styled.div<Props>`
     height: ${mobileHeight};
     margin-left: 0;
     padding-left: 0;
-    background-image: url("/images/icons/btn_search_dark.png");
+    background-image: ${props => props.show ? 'url("/images/icons/btn_search_white.png")' : 'url("/images/icons/btn_search_dark.png")'};
     background-size: auto 18px;
     background-position: center;
     border-bottom: none;
+    transition: all .3s;
   }
 `;
 
@@ -154,6 +154,7 @@ export const SignWrapper = styled.div<Props>`
   vertical-align: bottom;
 
   > a {
+    transition: all .3s;
     color: ${props => props.show ? "#fff" : colors.dark}
   }
   

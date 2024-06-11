@@ -4,14 +4,14 @@ import MoveImg from "../common/MoveImg";
 import SectionTitle from "../common/SectionTitle";
 import Slider from "react-slick";
 import { Event } from "../../interfaces/events";
-import useStore from "../../store";
+import useMobileStore from "../../store/useMobileStore";
 
 interface Props {
   eventData: Event;
 }
 
 const Benefit: React.FC<Props> = ({ eventData }) => {
-  const { isMobile, sizeW } = useStore((state) => state);
+  const { isMobile, sizeW } = useMobileStore();
   const slideItems = sizeW < 580 ? 1.5 : (sizeW < 870 ? 3.5 : 5);
 
   const sliderSettings = {

@@ -1,12 +1,11 @@
 import { styled } from 'styled-components';
 import { BgBeige, MainInnerContainer, betterColor, colors } from '../../styles/GlobalStyle';
 import SectionTitle from '../common/SectionTitle';
-import useStore from '../../store';
+import useMobileStore from '../../store/useMobileStore';
 import Slider from 'react-slick';
 
 const BeBetter = () => {
-  const { isMobile, sizeW } = useStore((state) => state);
-  const slideItems = sizeW < 580 ? 1.5 : 3;
+  const { isMobile, sizeW } = useMobileStore();
 
 
   // [0]: mobile, [1]: tablet

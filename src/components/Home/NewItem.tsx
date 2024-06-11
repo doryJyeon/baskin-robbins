@@ -4,14 +4,14 @@ import SectionTitle from "../common/SectionTitle";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { NewItemData } from "../../data/NewItemData";
 import Slider from "react-slick";
-import useStore from "../../store";
+import useMobileStore from "../../store/useMobileStore";
 
 interface BgImgUrl {
   bgImg: string;
 }
 
 const NewItem = () => {
-  const { isMobile, sizeW } = useStore((state) => state);
+  const { isMobile, sizeW } = useMobileStore();
   const slideItems = sizeW < 580 ? 1.5 : (sizeW < 870 ? 2.5 : 3.5);
 
   // [0]: pc, [1]: mobile

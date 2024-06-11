@@ -51,6 +51,8 @@ export const MobileHomeImg = styled.div`
     > img.hero__content {
       width: 92%;
       height: auto;
+      border-radius: 17vw;
+      margin-bottom: 7px;
     }
   }
   @media (min-width: 600px) {
@@ -61,6 +63,7 @@ export const MobileHomeImg = styled.div`
 
       > img.hero__content {
         width: 435.15px;
+        border-radius: 15vw;
       }
     }
   }

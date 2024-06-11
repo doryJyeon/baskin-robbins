@@ -11,7 +11,7 @@ import { fetchData } from "../api/fetchData";
 import SearchResult from "../components/Search/SearchResult";
 import { useLocation } from "react-router-dom";
 import DataStateComponent from "../components/common/DataStateComponent";
-import useStore from "../store";
+import useMobileStore from "../store/useMobileStore";
 
 const StoryPage = () => {
   const location = useLocation();
@@ -19,7 +19,7 @@ const StoryPage = () => {
   const searchText = queryParams.get("searchText") || "";
   const searchType = queryParams.get("searchType") || "all";
 
-  const { isMobile } = useStore((state) => state);
+  const { isMobile } = useMobileStore();
 
   const [data, setData] = useState<TotalMenu | null>(null);
   const [dataState, setDataState] = useState("Loading");
