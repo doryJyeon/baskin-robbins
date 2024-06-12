@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { colors } from "../../styles/GlobalStyle";
+import { Link } from "react-router-dom";
 
 interface EventStyledProps {
   isBenefit: boolean;
@@ -28,7 +29,7 @@ export const EventWrapper = styled.ul`
   }
 `
 
-export const EventDiv = styled.li<EventStyledProps>`
+export const EventLink = styled(Link) <EventStyledProps>`
   width: 100%;
   max-height: 295px;
   border: 1px solid ${colors.border};
@@ -36,6 +37,7 @@ export const EventDiv = styled.li<EventStyledProps>`
   border-radius: 12px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   > div:first-of-type {
     width: 41%;
@@ -132,6 +134,63 @@ export const EventDiv = styled.li<EventStyledProps>`
         font-weight: 500;
         margin-bottom: 8px;
       }
+    }
+  }
+`
+
+export const EventDetailWrapper = styled.section`
+  width: 100%;
+  background: beige;
+  text-align: center;
+
+  > p {
+    font-size: 1.25rem;
+
+    &.event__date {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: ${colors.font};
+    }
+  }
+  > h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+  > hr {
+    width: 100%;
+    height: 1px;
+    background-color: ${colors.border};
+    border: none;
+    margin: 45px auto 0;
+
+    &.only__mobile {
+      margin-top: 0;
+    }
+  }
+  > img {
+    max-width: 900px;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 999px) {
+    > p {
+      font-size: 1.1rem;
+
+      &.event__date {
+        font-size: .875rem;
+      }
+    }
+    > h2 {
+      font-size: 1.5rem;
+    }
+    > img {
+      max-width: 100%;
+    }
+    > a.large {
+      width: 70%;
+      min-height: 44px;
+      line-height: 44px;
+      font-size: 1.2rem;
     }
   }
 `

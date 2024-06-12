@@ -65,9 +65,9 @@ const EventPage = () => {
             // 유효기간 체크
             !dateExpiredCheck(item.end) && (
               type === "all" ? (
-                <EventDetail id={key} data={item} />
+                <li><EventDetail id={key} data={item} /></li>
               ) : type === item.type && (
-                <EventDetail id={key} data={item} />
+                <li><EventDetail id={key} data={item} /></li>
               )
             )
           ))}

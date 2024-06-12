@@ -12,11 +12,14 @@ import PlazaPage from './pages/PlazaPage';
 import StoryPage from './pages/StoryPage';
 import StorePage from './pages/StorePage';
 import SearchPage from './pages/SearchPage';
+import EventDetailPage from './pages/EventDetailPage';
+import ScrollToTop from './components/common/ScrollToTop';
 
 const App: React.FC = () => {
   return (
     <Router>
       <Header />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -25,6 +28,7 @@ const App: React.FC = () => {
         <Route path="/menu/:type" element={<MenuPage />} />
 
         <Route path="/play/event/:type" element={<EventPage />} />
+        <Route path="/play/event/:type/:id" element={<EventDetailPage />} />
         <Route path="/play/plaza" element={<PlazaPage />} />
 
         <Route path="/story/:type" element={<StoryPage />} />
