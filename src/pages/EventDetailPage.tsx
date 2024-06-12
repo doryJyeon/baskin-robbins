@@ -38,6 +38,14 @@ const EventPage = () => {
     getData();
   }, []);
 
+  const changTypeKR = (type: string) => (
+    type === "promotion"
+      ? "프로모션"
+      : type === "benefit"
+        ? "제휴혜택"
+        : type
+  )
+
   return (
     <InnerContainer top="160px">
       <PlayLinks menuCheck={"event"} />
@@ -48,7 +56,7 @@ const EventPage = () => {
       {data && (
         <EventDetailWrapper>
           <hr className="only__mobile" />
-          <p>{data.type}</p>
+          <p>{changTypeKR(data.type)}</p>
           <h2>{data.title}</h2>
           <p className="event__date">{data.start && data.start + " ~ "}{data.end}</p>
           <hr className="only__pc" />

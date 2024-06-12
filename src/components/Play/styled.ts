@@ -140,7 +140,6 @@ export const EventLink = styled(Link) <EventStyledProps>`
 
 export const EventDetailWrapper = styled.section`
   width: 100%;
-  background: beige;
   text-align: center;
 
   > p {
@@ -165,6 +164,7 @@ export const EventDetailWrapper = styled.section`
 
     &.only__mobile {
       margin-top: 0;
+      margin-bottom: 10px;
     }
   }
   > img {
