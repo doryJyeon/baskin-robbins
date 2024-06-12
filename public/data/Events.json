@@ -1,75 +1,60 @@
 {
-  "101": {
-    "title" : "그래이맛 콘테스트 1차 투표! TOP 5를 뽑아주세요!",
-    "img" : "promotion/promotion (11).png",
-    "type" : "promotion",
-    "start": "2024-05-27",
-    "end": "2024-06-02"
-  },
-  "102": {
-    "title" : "31데이, 하프갤론 사전예약 시 6,500원 OFF!",
-    "img" : "promotion/promotion (10).png",
-    "type" : "promotion",
-    "start": "2024-05-26",
-    "end": "2024-05-30"
+  "100": {
+    "title": "우주 라이크 봉봉 출시 기념, T우주 제휴 프로모션",
+    "img": "promotion/promotion (12).png",
+    "type": "promotion",
+    "start": "2024-06-01",
+    "end": "2024-06-30",
+    "detail_img": "promotion(8).png"
   },
   "103": {
     "title" : "6월 이달의 맛, 인스타그램에 사진을 올려주세요!",
     "img" : "promotion/promotion (9).png",
     "type" : "promotion",
     "start": "2024-06-01",
-    "end": "2024-06-26"
+    "end": "2024-06-26",
+    "detail_img": "promotion(7).png"
   },
   "104": {
     "title" : "비오는 날 배스킨라빈스에서 우산 구매하자! 파인트 이상 구매 시, 투명우산 1,900원",
     "img" : "promotion/promotion (8).png",
     "type" : "promotion",
     "start": "2024-05-20",
-    "end": "2024-08-31"
+    "end": "2024-08-31",
+    "detail_img": "promotion(6).png"
   },
-  "105": {
-    "title" : "아메리카노 룰렛 이벤트 참여 시 최대 아메리카노 1잔 FREE",
-    "img" : "promotion/promotion (7).png",
-    "type" : "promotion",
-    "start": "2024-05-20",
-    "end": "2024-06-02"
-  },
-
   
-  "106": {
-    "title" : "배라와 소비자가 함께 만드는 어린이 놀이터, 핑크스푼 수거 프로그램!",
-    "img" : "promotion/promotion (6).png",
-    "type" : "promotion",
-    "start": "2024-05-13",
-    "end": "2024-06-07"
-  },
   "107": {
     "title" : "신세계사이먼 시흥 프리미엄 아울렛 팝업스토어 OPEN!",
     "img" : "promotion/promotion (2).jpg",
     "type" : "promotion",
     "start": "2024-05-03",
-    "end": "2024-06-30"
+    "end": "2024-06-30",
+    "detail_img": "promotion(2).jpg"
   },
   "108": {
     "title" : "LG U+ 멤버십 배스킨라빈스 특별한 제휴 혜택!",
     "img" : "benefit/benefit (3).jpg",
     "type" : "benefit",
     "start": "2024-03-01",
-    "end": "2024-12-31"
+    "end": "2024-12-31",
+    "detail_img": "event(2).png"
   },
   "109": {
     "title" : "워크샵 by 배스킨라빈스 그랜드 오픈",
     "img" : "promotion/promotion (5).png",
     "type" : "promotion",
     "start": "",
-    "end": "상시운영"
+    "end": "상시운영",
+    "detail_img": "promotion(5).png"
   },
   "110": {
     "title" : "유독Pick 구독하고 배스킨라빈스 4,000원 할인 받기!",
     "img" : "benefit/benefit (2).jpg",
     "type" : "benefit",
     "start": "2024-01-29",
-    "end": "2024-12-31"
+    "end": "2024-12-31",
+    "detail_img": "evnet(4).jpg"
   },
   
   "111": {
@@ -77,35 +62,40 @@
     "img" : "promotion/promotion (4).png",
     "type" : "promotion",
     "start": "2023-09-04",
-    "end": "소진 시 까지"
+    "end": "소진 시 까지",
+    "detail_img": "promotion(4).png"
   },
   "112": {
     "title" : "모슈 텀블러 머그 MD 구매 시 배라 3종 쿠폰 증정",
     "img" : "promotion/promotion (3).png",
     "type" : "promotion",
     "start": "2023-07-03",
-    "end": "소진 시 까지"
+    "end": "소진 시 까지",
+    "detail_img": "promotion(3).png"
   },
   "113": {
     "title" : "아이스크림 보냉 컨테이너 매장판매 시작!",
     "img" : "promotion/promotion (1).jpg",
     "type" : "promotion",
     "start": "2023-07-05",
-    "end": "소진 시 까지"
+    "end": "소진 시 까지",
+    "detail_img": "promotion(2).png"
   },
   "114": {
     "title" : "SKT 우주패스, 배스킨라빈스 구독 시 7천원 OFF!",
     "img" : "promotion/promotion (2).png",
     "type" : "promotion",
     "start": "",
-    "end": "상시 운영"
+    "end": "상시 운영",
+    "detail_img": "promotion(1).jpg"
   },
   "115": {
     "title" : "이제 배라에서도 애플페이",
     "img" : "benefit/benefit (4).png",
     "type" : "benefit",
     "start": "",
-    "end": "상시 운영"
+    "end": "상시 운영",
+    "detail_img": "event(5).jpg"
   },
 
   "116": {
@@ -113,34 +103,39 @@
     "img" : "benefit/benefit (3).png",
     "type" : "benefit",
     "start": "",
-    "end": "상시 운영"
+    "end": "상시 운영",
+    "detail_img": "event(1).jpg"
   },
   "117": {
     "title" : "2024 KT 멤버십 배스킨라빈스 특별한 제휴 혜택!",
     "img" : "benefit/benefit (2).png",
     "type" : "benefit",
     "start": "",
-    "end": "상시 운영"
+    "end": "상시 운영",
+    "detail_img": "event(3).jpg"
   },
   "118": {
     "title" : "T멤버십 회원 대상 싱글레귤러 최대 50%할인 또는 적립",
     "img" : "benefit/benefit (1).jpg",
     "type" : "benefit",
     "start": "",
-    "end": "상시 운영"
+    "end": "상시 운영",
+    "detail_img": "event(1).png"
   },
   "119": {
     "title" : "현대카드 M포인트 50% 사용",
     "img" : "benefit/benefit (1).png",
     "type" : "benefit",
     "start": "",
-    "end": "상시 운영"
+    "end": "상시 운영",
+    "detail_img": "event(2).jpg"
   },
   "120": {
     "title" : "1회용 컵 사용 줄이기 안내",
     "img" : "promotion/promotion (1).png",
     "type" : "promotion",
     "start": "",
-    "end": "상시 운영"
+    "end": "상시 운영",
+    "detail_img": "promotion(1).png"
   }
 }

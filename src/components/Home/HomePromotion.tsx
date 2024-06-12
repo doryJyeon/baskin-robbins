@@ -58,7 +58,7 @@ const HomePromotion: React.FC<Props> = ({ eventData }) => {
             {Object.entries(eventData).map(([key, item]) => (
               <Promotion key={key}>
                 <div>
-                  <MoveImg to={`event/promotion`} src={`event/${item.img}`} />
+                  <MoveImg to={`play/event/promotion/${key}`} src={`event/${item.img}`} />
                   <PromoDay>{item.start && `${item.start} ~ `}{item.end}</PromoDay>
                   <PromoDescription>{item.title}</PromoDescription>
                 </div>

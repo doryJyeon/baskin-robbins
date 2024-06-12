@@ -33,7 +33,7 @@ const Benefit: React.FC<Props> = ({ eventData }) => {
         <Benefits>
           <Slider {...sliderSettings}>
             {Object.entries(eventData).map(([key, item]) => (
-              <MoveImg key={key} to={key} src={`event/${item.img}`} alt={"benefit"} />
+              <MoveImg key={key} to={`play/event/benefit/${key}`} src={`event/${item.img}`} alt={"benefit"} />
             ))}
           </Slider>
         </Benefits>
@@ -46,8 +46,8 @@ const Benefit: React.FC<Props> = ({ eventData }) => {
             <span>내 주변 가까운<br />배스킨라빈스 매장을 찾아보세요</span>
           </TitleDesc>
           {isMobile
-            ? <MoveImg mobileImg={true} to={"map"} src={"icons/img_store_map.png"} />
-            : <MoveImg to={"map"} src={"icons/img_store_map.png"} />
+            ? <MoveImg mobileImg={true} to={"https://www.baskinrobbins.co.kr/store/map.php"} src={"icons/img_store_map.png"} blank={true} />
+            : <MoveImg to={"https://www.baskinrobbins.co.kr/store/map.php"} src={"icons/img_store_map.png"} blank={true} />
           }
         </div>
 
@@ -57,8 +57,8 @@ const Benefit: React.FC<Props> = ({ eventData }) => {
             <span>오랜 시간 우리 곁에 함께한<br />배스킨라빈스의 이야기</span>
           </TitleDesc>
           {isMobile
-            ? <MoveImg mobileImg={true} to={"story"} src={"icons/img_story_story.png"} />
-            : <MoveImg to={"story"} src={"icons/img_story_story.png"} />
+            ? <MoveImg mobileImg={true} to={"story/history"} src={"icons/img_story_story.png"} />
+            : <MoveImg to={"story/history"} src={"icons/img_story_story.png"} />
           }
         </div>
       </LoadMapWrapper>

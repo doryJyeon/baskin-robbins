@@ -9,9 +9,9 @@ const HomeMain = () => (
       <HomeImageWrapper>
         <img src="/images/main/home_hero.png" alt="home hero" />
         <EventWrapper>
-          <MoveImg to={"event/"} src={"main/home_event1.png"} alt="event" />
-          <MoveImg to={"event/"} src={"main/home_event2.png"} alt="event" />
-          <MoveImg to={"event/"} src={"main/home_event3.png"} alt="event" />
+          <MoveImg to={"play/event/promotion/"} src={"main/home_event1.png"} alt="event" />
+          <MoveImg to={"play/event/promotion/109"} src={"main/home_event2.png"} alt="event" />
+          <MoveImg to={"play/event/promotion/103"} src={"main/home_event3.png"} alt="event" />
         </EventWrapper>
       </HomeImageWrapper>
     </HomeWrapper>

@@ -50,7 +50,7 @@ const NewItem = () => {
   ];
 
   // pc에서는 이미지 안에 이름 포함된 이미지 사용
-  const getPcFirstItemName = (name: string) => name.replace(".jpg", "_main.jpg")
+  const getPcFirstItemName = (name: string) => name.replace(".", "_main.")
 
   return (
     <BgLightPink>
@@ -178,12 +178,12 @@ const ItemArrow = styled.div`
   height: 46px;
   border-radius: 50%;
   background-color: ${props => props.color};
-  cursor: pointer;
+  cursor: not-allowed;
   bottom: 30px;
   right: 20px;
   font-size: 1.8rem;
   text-align: center;
-  line-height: 50px;
+  line-height: 52px;
   color: #fff;
 `
 
@@ -200,6 +200,7 @@ const MobileNewItem = styled.div`
     margin-left: 27px;
     border-radius: 15px;
     background-color: #fff;
+
     > img {
       width: 100%;
       height: auto;

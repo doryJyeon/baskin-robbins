@@ -5,7 +5,7 @@ import { FlavorItemWrapper, FlavorMonth, FlavorWrapper } from './styled';
 const FlavorOfMonth = () => {
   return (
     <>
-      <TitleDesc title={`${getDate("nextMonth")}월 이달의 맛`} desc={undefined} />
+      <TitleDesc title={`${getDate("month")}월 이달의 맛`} desc={undefined} />
 
       <FlavorMonth>
         <article>

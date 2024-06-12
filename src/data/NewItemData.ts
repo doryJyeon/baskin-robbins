@@ -18,56 +18,56 @@ type NewItems = [NewItem, NewItem, NewItem, NewItem, NewItem];
 export const NewItemData: NewItems[] = [
   [
     [
-      "wonderland_shooting_star.jpg",
-      "이상한 나라의 슈팅스타",
-      "#cdb4db"
+      "would_u_like_bonbon.png",
+      "우주 라이크 봉봉",
+      "#621708"
     ],
     [
-      "wachuone_shake.jpg",
-      "와츄원 쉐이크",
-      "#cdb4db"
+      "bonbon_blast.png",
+      "우주 라이크 봉봉 블라스트",
+      "#582f0e"
     ],
     [
-      "pink_flower.jpg",
-      "핑크 플라워 포 유",
-      "#ffb5a7"
+      "bonbon_mozzi.png",
+      "우주 라이크 봉봉 모찌",
+      "#43281c"
     ],
     [
-      "blooming_flower.jpg",
-      "블루밍 플라워 인 러브",
-      "#ffc9b9"
+      "bonbon_cake.png",
+      "우주 라이크 봉봉 케이크",
+      "#43291f"
     ],
     [
-      "dinosaur_cake.jpg",
-      "다이노소어 스윗 월드",
-      "#a7c957"
+      "bonbon_sundae.png",
+      "우주 라이크 봉봉 선데",
+      "#9c6644"
     ]
   ],
   [
     [
       "dino_jelly.jpg",
       "디노 젤리",
+      "#283618"
+    ],
+    [
+      "rice_blast.png",
+      "바사삭 쌀튀밥 팥빙 블라스트",
+      "#660708"
+    ],
+    [
+      "rice_bingsu.png",
+      "바사삭 쌀튀밥 팥빙수",
+      "#590d22"
+    ],
+    [
+      "mangbing_blast.png",
+      "솔티크림 망빙 블라스트",
       "#f77f00"
     ],
     [
-      "earl_gray_blast.jpg",
-      "얼그레이 밀크티 블라스트",
-      "#f77f00"
-    ],
-    [
-      "apple_mango.jpg",
-      "애플망고 젤라또",
-      "#fcbf49"
-    ],
-    [
-      "grapefruit_black_tea.jpg",
-      "자몽 블랙티 블라스트",
-      "#fcbf49"
-    ],
-    [
-      "pistachio.jpg",
-      "피스타치오 젤라또",
-      "#f86624"
+      "mango_bingsu.png",
+      "솔티크림 망고빙수",
+      "#ff9505"
     ]
   ]
 ]

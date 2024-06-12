@@ -26,15 +26,15 @@ const BRPlay = () => {
           <PlayWrapper>
             <div className="slider-container">
               <Slider {...sliderSettings}>
-                <MoveImg mobileImg={true} to={"my_flavor_list"} src={"main/my_flavor_list.png"} alt="My flavor list" blank={true} />
-                <MoveImg mobileImg={true} to={"br_plaza"} src={"main/br_plaza.png"} alt="배라광장" blank={true} />
+                <MoveImg mobileImg={true} to={"https://www.baskinrobbins.co.kr/play/myflavor/list.php"} src={"main/my_flavor_list.png"} alt="My flavor list" blank={true} />
+                <MoveImg mobileImg={true} to={"play/plaza"} src={"main/br_plaza.png"} alt="배라광장" blank={true} />
               </Slider>
             </div>
           </PlayWrapper>
         ) : (
           <PlayWrapper>
-            <MoveImg to={"my_flavor_list"} src={"main/my_flavor_list.png"} alt="My flavor list" blank={true} />
-            <MoveImg to={"br_plaza"} src={"main/br_plaza.png"} alt="배라광장" blank={true} />
+            <MoveImg to={"https://www.baskinrobbins.co.kr/play/myflavor/list.php"} src={"main/my_flavor_list.png"} alt="My flavor list" blank={true} />
+            <MoveImg to={"play/plaza"} src={"main/br_plaza.png"} alt="배라광장" blank={true} />
           </PlayWrapper>
         )}
       </InnerContainer>
