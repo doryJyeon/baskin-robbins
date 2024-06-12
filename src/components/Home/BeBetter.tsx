@@ -39,21 +39,21 @@ const BeBetter = () => {
         {isMobile ? (
           <BetterWrapper className="slider-container slider__custom__margin">
             <Slider {...sliderSettings[(sizeW < 580 ? 0 : 1)]}>
-              <a href="/be_better/farm">
+              <a href="/story/be_better">
                 <img src="/images/be_better/img_farm.png" alt="핑크팜" />
                 <div>
                   <h4 className="brown">핑크팜 캠페인</h4>
                   <p>지역 농가 상생 프로젝트</p>
                 </div>
               </a>
-              <a href="/be_better/dream">
+              <a href="/story/be_better">
                 <img src="/images/be_better/img_dream.png" alt="핑크드림" />
                 <div>
                   <h4 className="pink">핑크드림 캠페인</h4>
                   <p>청소년 자립 지원 프로젝트</p>
                 </div>
               </a>
-              <a href="/be_better/link">
+              <a href="/story/be_better">
                 <img src="/images/be_better/img_link.png" alt="핑크링크" />
                 <div>
                   <h4 className="green">핑크링크 캠페인</h4>
@@ -64,21 +64,21 @@ const BeBetter = () => {
           </BetterWrapper>
         ) : (
           <BetterWrapper>
-            <a href="/be_better/farm">
+            <a href="/story/be_better">
               <img src="/images/be_better/img_farm.png" alt="핑크팜" />
               <div>
                 <h4 className="brown">핑크팜 캠페인</h4>
                 <p>지역 농가 상생 프로젝트</p>
               </div>
             </a>
-            <a href="/be_better/dream">
+            <a href="/story/be_better">
               <img src="/images/be_better/img_dream.png" alt="핑크드림" />
               <div>
                 <h4 className="pink">핑크드림 캠페인</h4>
                 <p>청소년 자립 지원 프로젝트</p>
               </div>
             </a>
-            <a href="/be_better/link">
+            <a href="/story/be_better">
               <img src="/images/be_better/img_link.png" alt="핑크링크" />
               <div>
                 <h4 className="green">핑크링크 캠페인</h4>
