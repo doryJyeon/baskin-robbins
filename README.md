@@ -4,6 +4,8 @@ React18 + TypeScript + Vite
 
 Pc / Tablet / Mobile
 
+> 해당 사이트는 2024.06.12을 기준으로 제작되었습니다.
+
 ## 구성
 |pages|sub menu|
 |:---:|:---:|
