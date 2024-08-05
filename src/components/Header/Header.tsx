@@ -12,7 +12,6 @@ import HeaderSearchDiv from "./HeaderSearchDiv";
 import useHeaderStore from "../../store/useHeaderStore";
 
 const Header = () => {
-  const login = false;
   const { isMobile, checkIsMobile } = useMobileStore();
   const { isRoot, headerShow, bgColored, searching, checkSearching, checkBgColored, checkHoverMenu, checkHeaderShow } = useHeaderStore((state) => state);
 
@@ -101,10 +100,7 @@ const Header = () => {
         />
 
         <SignWrapper show={bgColored} onMouseOver={handleMouseLeave}>
-          {login
-            ? <Link to={"/signout"}><FaArrowRightFromBracket /></Link>
-            : <Link to={"/signin"}><FaUser /></Link>
-          }
+          <Link to={"#"}><FaUser /></Link>
         </SignWrapper>
       </HeaderContainer>
 
