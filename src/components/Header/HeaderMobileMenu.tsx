@@ -2,21 +2,17 @@ import useHeaderStore from "../../store/useHeaderStore";
 import { MobileMenuIcon } from "./style";
 
 const HeaderMobileMenu = () => {
-  const { bgColored, checkMobileMenu, checkBgColored } = useHeaderStore();
+  const { mobileMenu, bgColored, checkMobileMenu, checkBgColored } = useHeaderStore();
 
   // mobile menu show / hide 
-  const handleMobileMenuShow = (event: React.MouseEvent<HTMLButtonElement>) => {
-    const thisTarget = event.currentTarget;
-    thisTarget.classList.toggle("active")
-
-    // menu open
-    checkMobileMenu(thisTarget.classList.contains("active"))
-    // header bg color
-    thisTarget.classList.contains("active") && checkBgColored(true)
+  const handleMobileMenuShow = () => {
+    const menuShow = !mobileMenu
+    checkBgColored(menuShow)
+    checkMobileMenu(menuShow)
   }
 
   return (
-    <MobileMenuIcon show={bgColored} onClick={handleMobileMenuShow}>
+    <MobileMenuIcon className={`${mobileMenu && "active"}`} show={bgColored} onClick={handleMobileMenuShow}>
       <div className="menu__mobile__line"></div>
       <div className="menu__mobile__line"></div>
       <div className="menu__mobile__line"></div>
