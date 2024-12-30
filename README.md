@@ -6,7 +6,18 @@ Pc / Tablet / Mobile
 
 > 해당 사이트는 2024.06.12을 기준으로 제작되었습니다.
 
-## 구성
+## 실행 방법
+```
+// npm install
+npm i
+npm run dev
+
+// localhost 접속
+localhost:5173
+```
+
+## 구현
+### Nav 구성
 |pages|sub menu|
 |:---:|:---:|
 |main|-|
@@ -16,8 +27,7 @@ Pc / Tablet / Mobile
 |Delivery|- 배달주문<br />- 단체주문|
 |search|(제품명, #태그로 검색 가능)|
 
-
-## 구현 화면
+---
 ### main
 ![main-pc-2](https://github.com/user-attachments/assets/43fdbf07-563e-4fad-9950-b5d02fab04a9) ![main_mobile-2](https://github.com/user-attachments/assets/cf37d3e8-9c6d-4b47-8556-dcbe40534568)<br />
 (Pc) | (mobile)
